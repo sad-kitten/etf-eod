@@ -1,112 +1,112 @@
 ticker,ok,rows,err
-ACWV,False,0,No module named 'sklearn'
-ARKG,False,0,No module named 'sklearn'
-ARKK,False,0,No module named 'sklearn'
-ARKQ,False,0,No module named 'sklearn'
-ARKW,False,0,No module named 'sklearn'
-ARKX,False,0,No module named 'sklearn'
-AVDE,False,0,No module named 'sklearn'
-AVDV,False,0,No module named 'sklearn'
-AVES,False,0,No module named 'sklearn'
-AVUS,False,0,No module named 'sklearn'
-AVUV,False,0,No module named 'sklearn'
-BRK-B,False,0,No module named 'sklearn'
-CANE,False,0,No module named 'sklearn'
-CBOE,False,0,No module named 'sklearn'
-CEG,False,0,No module named 'sklearn'
-CIBR,False,0,No module named 'sklearn'
-CLOU,False,0,No module named 'sklearn'
-CME,False,0,No module named 'sklearn'
-COIN,False,0,No module named 'sklearn'
-COPX,False,0,No module named 'sklearn'
-CORN,False,0,No module named 'sklearn'
-COWZ,False,0,No module named 'sklearn'
-CTA,False,0,No module named 'sklearn'
-CXSE,False,0,No module named 'sklearn'
-DBMF,False,0,No module named 'sklearn'
-DFAS,False,0,No module named 'sklearn'
-DIVO,False,0,No module named 'sklearn'
-EDV,False,0,No module named 'sklearn'
-EFAV,False,0,No module named 'sklearn'
-EMXC,False,0,No module named 'sklearn'
-ESGD,False,0,No module named 'sklearn'
-EUAD,False,0,No module named 'sklearn'
-EWA,False,0,No module named 'sklearn'
-EWC,False,0,No module named 'sklearn'
-EWG,False,0,No module named 'sklearn'
-EWT,False,0,No module named 'sklearn'
-EWU,False,0,No module named 'sklearn'
-EWZ,False,0,No module named 'sklearn'
-FNDC,False,0,No module named 'sklearn'
-FNDE,False,0,No module named 'sklearn'
-FNDF,False,0,No module named 'sklearn'
-FNDX,False,0,No module named 'sklearn'
-FNV,False,0,No module named 'sklearn'
-FTEC,False,0,No module named 'sklearn'
-GD,False,0,No module named 'sklearn'
-GDX,False,0,No module named 'sklearn'
-GDXJ,False,0,No module named 'sklearn'
-GLD,False,0,No module named 'sklearn'
-GLDM,False,0,No module named 'sklearn'
-GOVZ,False,0,No module named 'sklearn'
-GRID,False,0,No module named 'sklearn'
-HACK,False,0,No module named 'sklearn'
-IAI,False,0,No module named 'sklearn'
-IBB,False,0,No module named 'sklearn'
-ICE,False,0,No module named 'sklearn'
-IEF,False,0,No module named 'sklearn'
-IGV,False,0,No module named 'sklearn'
-IHAK,False,0,No module named 'sklearn'
-IHI,False,0,No module named 'sklearn'
-INDA,False,0,No module named 'sklearn'
-ITA,False,0,No module named 'sklearn'
-IUSV,False,0,No module named 'sklearn'
-IVV,False,0,No module named 'sklearn'
-IWD,False,0,No module named 'sklearn'
-IWN,False,0,No module named 'sklearn'
-IWS,False,0,No module named 'sklearn'
-IXUS,False,0,No module named 'sklearn'
-JEDI,False,0,No module named 'sklearn'
-JEPI,False,0,No module named 'sklearn'
-JEPQ,False,0,No module named 'sklearn'
-JQUA,False,0,No module named 'sklearn'
-KMLM,False,0,No module named 'sklearn'
-KWEB,False,0,No module named 'sklearn'
-LMT,False,0,No module named 'sklearn'
-LTPZ,False,0,No module named 'sklearn'
-MOAT,False,0,No module named 'sklearn'
-MSCI,False,0,No module named 'sklearn'
-NDAQ,False,0,No module named 'sklearn'
-NLR,False,0,No module named 'sklearn'
-NOC,False,0,No module named 'sklearn'
-NUKZ,False,0,No module named 'sklearn'
-PALL,False,0,No module named 'sklearn'
-PAVE,False,0,No module named 'sklearn'
-PPA,False,0,No module named 'sklearn'
-PPLT,False,0,No module named 'sklearn'
-PSLV,False,0,No module named 'sklearn'
-QQEW,False,0,No module named 'sklearn'
-QTUM,False,0,No module named 'sklearn'
-QUAL,False,0,No module named 'sklearn'
-ROKT,False,0,No module named 'sklearn'
-RPV,False,0,No module named 'sklearn'
-RTX,False,0,No module named 'sklearn'
-SCHG,False,0,No module named 'sklearn'
-SCHP,False,0,No module named 'sklearn'
-SCHX,False,0,No module named 'sklearn'
-SETM,False,0,No module named 'sklearn'
-SHLD,False,0,No module named 'sklearn'
-SIL,False,0,No module named 'sklearn'
-SILJ,False,0,No module named 'sklearn'
-SKYY,False,0,No module named 'sklearn'
-SMH,False,0,No module named 'sklearn'
-SOXX,False,0,No module named 'sklearn'
-SPDW,True,4867,No module named 'sklearn'
+ACWV,True,3735,
+ARKG,True,2973,
+ARKK,True,2973,
+ARKQ,True,2996,
+ARKW,True,2996,
+ARKX,True,1361,
+AVDE,True,1740,
+AVDV,True,1740,
+AVES,True,1233,
+AVUS,True,1740,
+AVUV,True,1740,
+BRK-B,True,6704,
+CANE,True,3758,
+CBOE,True,4077,
+CEG,True,1157,
+CIBR,True,2804,
+CLOU,True,1853,
+CME,True,5969,
+COIN,True,1351,
+COPX,True,4116,
+CORN,True,4081,
+COWZ,True,2433,
+CTA,True,1124,
+CXSE,True,3504,
+DBMF,True,1838,
+DFAS,True,1309,
+DIVO,True,2438,
+EDV,True,4676,
+EFAV,True,3735,
+EMXC,True,2286,
+ESGD,True,2516,
+EUAD,True,464,
+EWA,True,6704,
+EWC,True,6704,
+EWG,True,6704,
+EWT,True,6584,
+EWU,True,6704,
+EWZ,True,6570,
+FNDC,True,3279,
+FNDE,True,3279,
+FNDF,True,3279,
+FNDX,True,3279,
+FNV,True,4710,
+FTEC,True,3230,
+GD,True,6704,
+GDX,True,5100,
+GDXJ,True,4224,
+GLD,True,5478,
+GLDM,True,2055,
+GOVZ,True,1488,
+GRID,True,4220,
+HACK,True,2965,
+IAI,True,5111,
+IBB,True,6424,
+ICE,True,5227,
+IEF,True,6060,
+IGV,True,6317,
+IHAK,True,1812,
+IHI,True,5111,
+INDA,True,3663,
+ITA,True,5111,
+IUSV,True,6555,
+IVV,True,6608,
+IWD,True,6603,
+IWN,True,6560,
+IWS,True,6305,
+IXUS,True,3480,
+JEDI,True,232,
+JEPI,True,1576,
+JEPQ,True,1084,
+JQUA,True,2211,
+KMLM,True,1441,
+KWEB,True,3289,
+LMT,True,6704,
+LTPZ,True,4270,
+MOAT,True,3607,
+MSCI,True,4725,
+NDAQ,True,6080,
+NLR,True,4790,
+NOC,True,6704,
+NUKZ,True,652,
+PALL,True,4185,
+PAVE,True,2383,
+PPA,True,5242,
+PPLT,True,4185,
+PSLV,True,3981,
+QQEW,True,5114,
+QTUM,True,2006,
+QUAL,True,3299,
+ROKT,True,1972,
+RPV,True,5153,
+RTX,True,6704,
+SCHG,True,4189,
+SCHP,True,4041,
+SCHX,True,4230,
+SETM,True,896,
+SHLD,True,742,
+SIL,True,4116,
+SILJ,True,3457,
+SKYY,True,3810,
+SMH,True,6598,
+SOXX,True,6319,
+SPDW,True,4867,
 SPGI,True,6704,
 SPLV,True,3852,
 SPMO,True,2736,
 SPYG,True,6515,
-TIPZ,False,0,No module named 'sklearn'
+TIPZ,True,4269,
 TLH,True,4939,
 TLT,True,6060,
 URNM,True,1692,
@@ -128,5 +128,5 @@ XBI,True,5173,
 XLE,True,6704,
 XLV,True,6704,
 XSD,True,5173,
-XSW,False,0,No module named 'sklearn'
+XSW,True,3750,
 ZROZ,True,4229,
