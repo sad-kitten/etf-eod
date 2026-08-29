@@ -101,32 +101,32 @@ SILJ,False,0,No module named 'sklearn'
 SKYY,False,0,No module named 'sklearn'
 SMH,False,0,No module named 'sklearn'
 SOXX,False,0,No module named 'sklearn'
-SPDW,False,0,No module named 'sklearn'
-SPGI,False,0,No module named 'sklearn'
-SPLV,False,0,No module named 'sklearn'
-SPMO,False,0,No module named 'sklearn'
-SPYG,False,0,No module named 'sklearn'
+SPDW,True,4867,No module named 'sklearn'
+SPGI,True,6704,
+SPLV,True,3852,
+SPMO,True,2736,
+SPYG,True,6515,
 TIPZ,False,0,No module named 'sklearn'
-TLH,False,0,No module named 'sklearn'
-TLT,False,0,No module named 'sklearn'
-URNM,False,0,No module named 'sklearn'
-USMV,False,0,No module named 'sklearn'
-V,False,0,No module named 'sklearn'
-VALQ,False,0,No module named 'sklearn'
-VFQY,False,0,No module named 'sklearn'
-VGLT,False,0,No module named 'sklearn'
-VOO,False,0,No module named 'sklearn'
-VOX,False,0,No module named 'sklearn'
-VT,False,0,No module named 'sklearn'
-VTIP,False,0,No module named 'sklearn'
-VTV,False,0,No module named 'sklearn'
-WEAT,False,0,No module named 'sklearn'
-WM,False,0,No module named 'sklearn'
-WPM,False,0,No module named 'sklearn'
-XAR,False,0,No module named 'sklearn'
-XBI,False,0,No module named 'sklearn'
-XLE,False,0,No module named 'sklearn'
-XLV,False,0,No module named 'sklearn'
-XSD,False,0,No module named 'sklearn'
+TLH,True,4939,
+TLT,True,6060,
+URNM,True,1692,
+USMV,True,3735,
+V,True,4641,
+VALQ,True,2167,
+VFQY,True,2145,
+VGLT,True,4189,
+VOO,True,4017,
+VOX,True,5514,
+VT,True,4572,
+VTIP,True,3486,
+VTV,True,5681,
+WEAT,True,3758,
+WM,True,6704,
+WPM,True,5321,
+XAR,True,3750,
+XBI,True,5173,
+XLE,True,6704,
+XLV,True,6704,
+XSD,True,5173,
 XSW,False,0,No module named 'sklearn'
-ZROZ,False,0,No module named 'sklearn'
+ZROZ,True,4229,
