@@ -36,10 +36,12 @@ by a GitHub Actions workflow and committed back to this repository as plain CSV 
 | `ticker` | Yahoo symbol as written in `tickers.txt` (`BRK-B`, not `BRKB`). |
 | `ok` | `True` if the download succeeded within 3 attempts. |
 | `rows` | Number of rows written (0 on failure). |
-| `err` | First 80 characters of the last error, empty on success. |
+| `err` | Reason for the last failed attempt (first 160 characters, one line), empty on success. Yahoo's own message is recorded, e.g. `$XYZ: possibly delisted; no timezone found`. |
 
 A full run rewrites the file for the whole universe. A subset run (see below) updates only the
-symbols it pulled and keeps every other row from the previous file.
+symbols it pulled and keeps every other row from the previous file. If every symbol in a run
+fails (Yahoo outage, rate limit) or a Python dependency is missing, `pull.py` exits non-zero so
+the workflow stops before the commit step and the previous good files stay in place.
 
 ### `validation.csv`
 
@@ -47,7 +49,7 @@ symbols it pulled and keeps every other row from the previous file.
 |---|---|
 | `ticker` | Yahoo symbol (mapped back from the file name via `tickers.txt`; falls back to the file stem). |
 | `first_date`, `last_date` | First and last `Date` in the file. |
-| `rows` | Row count. |
+| `rows` | Number of data rows in the file. |
 | `max_gap_days` | Largest number of calendar days between two consecutive rows. Normal weekends and holidays give 3 to 4; anything much larger is a hole in the history. |
 | `stale` | `True` when `last_date` is more than 10 days before the run date (UTC). |
 | `adj_close_nonpositive` | Count of rows where `Adj_Close <= 0`. |
@@ -89,7 +91,7 @@ To drop a symbol, delete its line in `tickers.txt` and delete `prices/<SYMBOL>.c
 ## Running locally
 
 ```bash
-pip install yfinance pandas
+pip install "yfinance[repair]" pandas   # [repair] adds scipy + scikit-learn, required for repair=True
 python scripts/pull.py                  # or: SUBSET=VTI,BRK-B python scripts/pull.py
 python scripts/validate.py
 ```
@@ -98,7 +100,7 @@ python scripts/validate.py
 
 ```python
 import pandas as pd
-prices = pd.read_csv("prices/VTI.csv", index_col="Date", parse_dates=True)
+prices = pd.read_csv("prices/VOO.csv", index_col="Date", parse_dates=True)
 monthly = pd.read_csv("monthly_returns.csv", index_col="month")
 ```
 

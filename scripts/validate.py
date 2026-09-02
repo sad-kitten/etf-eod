@@ -45,19 +45,24 @@ def symbol_map():
 
 
 def load_prices(path):
-    """Read one price file, sorted by date with duplicate dates dropped (last wins)."""
+    """Read one price file. Returns (clean_df, raw_rows).
+
+    raw_rows is the number of data rows in the file, which is what validation.csv
+    reports. The frame used for the other metrics is sorted by date, with
+    unparseable dates dropped and duplicate dates collapsed (last wins).
+    """
     df = pd.read_csv(path)
+    raw_rows = len(df)
     df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
     df = df.dropna(subset=["Date"]).sort_values("Date", kind="stable")
     df = df.drop_duplicates(subset="Date", keep="last").reset_index(drop=True)
-    return df
+    return df, raw_rows
 
 
-def validate_one(ticker, df, today):
+def validate_one(ticker, df, today, rows):
     dates = df["Date"]
-    rows = len(df)
-    if rows == 0:
-        return dict(ticker=ticker, first_date="", last_date="", rows=0, max_gap_days=0,
+    if len(df) == 0:
+        return dict(ticker=ticker, first_date="", last_date="", rows=rows, max_gap_days=0,
                     stale=True, adj_close_nonpositive=0, repaired_rows=0)
     gaps = dates.diff().dt.days.dropna()
     max_gap = int(gaps.max()) if len(gaps) else 0
@@ -128,13 +133,13 @@ def main():
         stem = os.path.splitext(os.path.basename(path))[0]
         ticker = names.get(stem.upper(), stem)
         try:
-            df = load_prices(path)
+            df, raw_rows = load_prices(path)
         except Exception as exc:  # noqa: BLE001 - report unreadable files, keep going
             print(f"{ticker}: unreadable ({exc})", file=sys.stderr)
             records.append(dict(ticker=ticker, first_date="", last_date="", rows=0, max_gap_days=0,
                                 stale=True, adj_close_nonpositive=0, repaired_rows=0))
             continue
-        records.append(validate_one(ticker, df, today))
+        records.append(validate_one(ticker, df, today, raw_rows))
         rets = monthly_returns(ticker, df)
         if rets is not None:
             panels.append(rets)
