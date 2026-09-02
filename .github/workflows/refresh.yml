@@ -1,56 +1,43 @@
 name: refresh-prices
 on:
   workflow_dispatch:
+    inputs:
+      tickers:
+        description: "Comma-separated subset of tickers.txt symbols to pull (blank = whole universe)"
+        required: false
+        default: ""
+        type: string
   push:
+    paths:
+      - tickers.txt
+      - .github/workflows/refresh.yml
+      - "scripts/**"
   schedule:
     - cron: "20 9 * * 1"   # Mondays 09:20 UTC
 permissions:
   contents: write
+concurrency:
+  group: refresh-prices
+  cancel-in-progress: false
 jobs:
-  pull:
+  refresh:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262   # v4
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065   # v5
         with:
           python-version: "3.11"
-      - run: pip install --quiet yfinance pandas scipy scikit-learn
+      - run: pip install --quiet yfinance pandas
       - name: pull
-        run: |
-          python - <<'EOF'
-          import os, time, pandas as pd, yfinance as yf
-          TICKERS = "ACWV,ARKG,ARKK,ARKQ,ARKW,ARKX,AVDE,AVDV,AVES,AVUS,AVUV,BRK-B,CANE,CBOE,CEG,CIBR,CLOU,CME,COIN,COPX,CORN,COWZ,CTA,CXSE,DBMF,DFAS,DIVO,EDV,EFAV,EMXC,ESGD,EUAD,EWA,EWC,EWG,EWT,EWU,EWZ,FNDC,FNDE,FNDF,FNDX,FNV,FTEC,GD,GDX,GDXJ,GLD,GLDM,GOVZ,GRID,HACK,IAI,IBB,ICE,IEF,IGV,IHAK,IHI,INDA,ITA,IUSV,IVV,IWD,IWN,IWS,IXUS,JEDI,JEPI,JEPQ,JQUA,KMLM,KWEB,LMT,LTPZ,MOAT,MSCI,NDAQ,NLR,NOC,NUKZ,PALL,PAVE,PPA,PPLT,PSLV,QQEW,QTUM,QUAL,ROKT,RPV,RTX,SCHG,SCHP,SCHX,SETM,SHLD,SIL,SILJ,SKYY,SMH,SOXX,SPDW,SPGI,SPLV,SPMO,SPYG,TIPZ,TLH,TLT,URNM,USMV,V,VALQ,VFQY,VGLT,VOO,VOX,VT,VTIP,VTV,WEAT,WM,WPM,XAR,XBI,XLE,XLV,XSD,XSW,ZROZ".split(",")
-          START = "2000-01-01"
-          os.makedirs("prices", exist_ok=True)
-          status = []
-          for t in TICKERS:
-              ok, err, rows = False, "", 0
-              for a in range(3):
-                  try:
-                      df = yf.Ticker(t).history(start=START, auto_adjust=False, actions=True, repair=True)
-                      if df is None or df.empty: raise RuntimeError("empty")
-                      df = df.reset_index()
-                      df["Date"] = pd.to_datetime(df["Date"], utc=True).dt.strftime("%Y-%m-%d")
-                      df = df.drop(columns=[c for c in ("Dividends","Stock Splits") if c in df.columns])
-                      df = df.rename(columns={"Adj Close":"Adj_Close","Capital Gains":"Capital_Gains"})
-                      if "Adj_Close" not in df.columns: raise RuntimeError("no adj close")
-                      df["Volume"] = df["Volume"].fillna(0).astype("int64")
-                      cols = [c for c in ["Date","Open","High","Low","Close","Adj_Close","Volume","Capital_Gains","Repaired?"] if c in df.columns]
-                      rows = len(df)
-                      df[cols].to_csv(f"prices/{t.replace('-','')}.csv", index=False)
-                      ok = True; break
-                  except Exception as e:
-                      err = str(e)[:80]; time.sleep(3*(a+1))
-              status.append((t, ok, rows, err))
-              time.sleep(0.7)
-          pd.DataFrame(status, columns=["ticker","ok","rows","err"]).to_csv("pull_status.csv", index=False)
-          bad = [s[0] for s in status if not s[1]]
-          print(f"{len(status)-len(bad)}/{len(status)} ok; failed: {bad}")
-          EOF
+        env:
+          SUBSET: ${{ inputs.tickers }}
+        run: python scripts/pull.py
+      - name: validate
+        run: python scripts/validate.py
       - name: commit
         run: |
           git config user.name "gh-actions"
           git config user.email "actions@users.noreply.github.com"
-          git add prices pull_status.csv
+          git add prices pull_status.csv validation.csv monthly_returns.csv
           git commit -m "refresh $(date -u +%F)" || echo "no changes"
           git push
