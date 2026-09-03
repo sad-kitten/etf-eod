@@ -23,11 +23,11 @@ by a GitHub Actions workflow and committed back to this repository as plain CSV 
 | Column | Notes |
 |---|---|
 | `Date` | Trading date, `YYYY-MM-DD`. |
-| `Open`, `High`, `Low`, `Close` | Unadjusted prices as reported by Yahoo (`auto_adjust=False`). |
+| `Open`, `High`, `Low`, `Close` | Prices as reported by Yahoo with `auto_adjust=False`: adjusted for splits, not for dividends. |
 | `Adj_Close` | Close adjusted for dividends and splits. Use this for returns. |
 | `Volume` | Shares traded, integer (missing values written as 0). |
-| `Capital_Gains` | Capital-gain distributions per share. Present only for funds that report them; the column is absent for stocks. |
-| `Repaired?` | `True` when `yfinance` (`repair=True`) fixed a bad print such as a 100x price error or a missing split adjustment. |
+| `Capital_Gains` | Capital-gain distributions per share (0.0 on most days). Present for funds, absent for stocks. |
+| `Repaired?` | `True` when `yfinance` (`repair=True`) changed the row, e.g. a 100x price error, a missing split or a dividend adjustment. Its repair heuristics flag most rows of some bond ETFs (SHY, IEF, TLT, AGG, LQD) and of NOC; treat the flag as a hint, not an error count. |
 
 ### `pull_status.csv`
 
@@ -49,8 +49,8 @@ the workflow stops before the commit step and the previous good files stay in pl
 |---|---|
 | `ticker` | Yahoo symbol (mapped back from the file name via `tickers.txt`; falls back to the file stem). |
 | `first_date`, `last_date` | First and last `Date` in the file. |
-| `rows` | Number of data rows in the file. |
-| `max_gap_days` | Largest number of calendar days between two consecutive rows. Normal weekends and holidays give 3 to 4; anything much larger is a hole in the history. |
+| `rows` | Number of data rows in the file. The other counts are computed after sorting by date and collapsing duplicate dates (last row wins). |
+| `max_gap_days` | Largest number of calendar days between two consecutive rows. Weekends plus a holiday give 4 or 5; 7 appears for symbols that traded through the September 2001 closure; anything larger is a hole in the history. |
 | `stale` | `True` when `last_date` is more than 10 days before the run date (UTC). |
 | `adj_close_nonpositive` | Count of rows where `Adj_Close <= 0`. |
 | `repaired_rows` | Count of rows where `Repaired?` is `True`. |

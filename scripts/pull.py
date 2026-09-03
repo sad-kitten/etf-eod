@@ -64,8 +64,16 @@ class _LastMessages(logging.Handler):
         return "; ".join(self.messages)
 
 
+YF_LOGGER = logging.getLogger("yfinance")
+YF_LEVEL = YF_LOGGER.level
 YF_LOG = _LastMessages()
-logging.getLogger("yfinance").addHandler(YF_LOG)
+YF_LOGGER.addHandler(YF_LOG)
+# Keep yfinance's warnings/errors visible in the job log: once any handler is
+# attached, Python's last-resort stderr handler no longer fires.
+_stderr = logging.StreamHandler(sys.stderr)
+_stderr.setLevel(logging.WARNING)
+_stderr.setFormatter(logging.Formatter("%(message)s"))
+YF_LOGGER.addHandler(_stderr)
 
 
 def read_tickers(path=TICKERS_FILE):
@@ -111,6 +119,10 @@ def pull_one(ticker):
     ok, rows, err = False, 0, ""
     for attempt in range(ATTEMPTS):
         YF_LOG.reset()
+        # yfinance raises its logger to CRITICAL while reconstructing bad rows
+        # and only restores it on the happy path; an exception in there would
+        # otherwise mute every later message, leaving err as "empty".
+        YF_LOGGER.setLevel(YF_LEVEL)
         try:
             df = yf.Ticker(ticker).history(start=START, auto_adjust=False, actions=True, repair=True)
             if df is None or df.empty:
