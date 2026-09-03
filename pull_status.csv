@@ -1,169 +1,169 @@
 ticker,ok,rows,err
-ACWV,False,0,No module named 'scipy'
-AGG,False,0,No module named 'scipy'
-AIRR,False,0,No module named 'scipy'
-AMLP,False,0,No module named 'scipy'
-AQWA,False,0,No module named 'scipy'
-ARKG,False,0,No module named 'sklearn'
-ARKK,False,0,No module named 'scipy'
-ARKQ,False,0,No module named 'scipy'
-ARKW,False,0,No module named 'scipy'
-ARKX,False,0,No module named 'scipy'
-AVDE,False,0,No module named 'scipy'
-AVDV,False,0,No module named 'scipy'
-AVES,False,0,No module named 'scipy'
-AVUS,False,0,No module named 'scipy'
-AVUV,False,0,No module named 'scipy'
-BIL,False,0,No module named 'scipy'
-BOTZ,False,0,No module named 'scipy'
-BRK-B,False,0,No module named 'scipy'
-BTAL,False,0,No module named 'scipy'
-CANE,False,0,No module named 'scipy'
-CBOE,False,0,No module named 'scipy'
-CEG,False,0,No module named 'scipy'
-CIBR,False,0,No module named 'scipy'
-CLOU,False,0,No module named 'scipy'
-CME,False,0,No module named 'scipy'
-COIN,False,0,No module named 'scipy'
-COPX,False,0,No module named 'scipy'
-CORN,False,0,No module named 'scipy'
-COWZ,False,0,No module named 'scipy'
-CTA,False,0,No module named 'scipy'
-CXSE,False,0,No module named 'scipy'
-DBMF,False,0,No module named 'scipy'
-DFAS,False,0,No module named 'sklearn'
-DIVO,False,0,No module named 'scipy'
-EDV,False,0,No module named 'scipy'
-EFAV,False,0,No module named 'sklearn'
-EMB,False,0,No module named 'scipy'
-EMXC,False,0,No module named 'scipy'
-ESGD,False,0,No module named 'scipy'
-EUAD,False,0,No module named 'scipy'
-EWA,False,0,No module named 'sklearn'
-EWC,False,0,No module named 'scipy'
-EWG,False,0,No module named 'scipy'
-EWJ,False,0,No module named 'scipy'
-EWT,False,0,No module named 'scipy'
-EWU,False,0,No module named 'scipy'
-EWZ,False,0,No module named 'scipy'
-FNDC,False,0,No module named 'scipy'
-FNDE,False,0,No module named 'scipy'
-FNDF,False,0,No module named 'scipy'
-FNDX,False,0,No module named 'scipy'
-FNV,False,0,No module named 'scipy'
-FTEC,False,0,No module named 'scipy'
-GD,False,0,No module named 'scipy'
-GDX,False,0,No module named 'scipy'
-GDXJ,False,0,No module named 'scipy'
-GLD,False,0,No module named 'scipy'
-GLDM,False,0,No module named 'scipy'
-GOVZ,False,0,No module named 'scipy'
-GRID,False,0,No module named 'scipy'
-GUNR,False,0,No module named 'sklearn'
-HACK,False,0,No module named 'scipy'
-HYG,False,0,No module named 'scipy'
-IAI,False,0,No module named 'scipy'
-IBB,False,0,No module named 'scipy'
-IBIT,False,0,No module named 'scipy'
-IBKR,False,0,No module named 'scipy'
-ICE,False,0,No module named 'scipy'
-IEF,False,0,No module named 'scipy'
-IEMG,False,0,No module named 'scipy'
-IGV,False,0,No module named 'scipy'
-IHAK,False,0,No module named 'scipy'
-IHI,False,0,No module named 'scipy'
-INDA,False,0,No module named 'scipy'
-ITA,False,0,No module named 'scipy'
-IUSV,False,0,No module named 'scipy'
-IVV,False,0,No module named 'scipy'
-IWD,False,0,No module named 'scipy'
-IWN,False,0,No module named 'scipy'
-IWS,False,0,No module named 'scipy'
-IXUS,False,0,No module named 'scipy'
-JEDI,False,0,No module named 'scipy'
-JEPI,False,0,No module named 'scipy'
-JEPQ,False,0,No module named 'scipy'
-JQUA,False,0,No module named 'scipy'
-KMLM,False,0,No module named 'scipy'
-KOMP,False,0,No module named 'sklearn'
-KRE,False,0,No module named 'scipy'
-KWEB,False,0,No module named 'scipy'
-LMT,False,0,No module named 'scipy'
-LQD,False,0,No module named 'scipy'
-LTPZ,False,0,No module named 'scipy'
-MOAT,False,0,No module named 'scipy'
-MSCI,False,0,No module named 'scipy'
-MTUM,False,0,No module named 'scipy'
-NDAQ,False,0,No module named 'scipy'
-NLR,False,0,No module named 'scipy'
-NOC,False,0,No module named 'scipy'
-NUKZ,False,0,No module named 'scipy'
-PALL,False,0,No module named 'sklearn'
-PAVE,False,0,No module named 'scipy'
-PDBC,False,0,No module named 'scipy'
-PPA,False,0,No module named 'sklearn'
-PPLT,False,0,No module named 'scipy'
-PRNT,False,0,No module named 'scipy'
-PSCI,False,0,No module named 'scipy'
-PSLV,False,0,No module named 'scipy'
-QQEW,False,0,No module named 'scipy'
-QTUM,False,0,No module named 'scipy'
-QUAL,False,0,No module named 'scipy'
-REMX,False,0,No module named 'scipy'
-ROBO,False,0,No module named 'scipy'
-ROKT,False,0,No module named 'scipy'
-RPV,False,0,No module named 'sklearn'
-RTX,False,0,No module named 'scipy'
-SCHD,False,0,No module named 'scipy'
-SCHG,False,0,No module named 'scipy'
-SCHP,False,0,No module named 'scipy'
-SCHX,False,0,No module named 'scipy'
-SETM,False,0,No module named 'scipy'
-SHLD,False,0,No module named 'scipy'
-SHY,False,0,No module named 'scipy'
-SIL,False,0,No module named 'scipy'
-SILJ,False,0,No module named 'scipy'
-SKYY,False,0,No module named 'scipy'
-SMH,False,0,No module named 'scipy'
-SOXX,False,0,No module named 'scipy'
-SPDW,False,0,No module named 'scipy'
-SPGI,False,0,No module named 'scipy'
-SPLV,False,0,No module named 'scipy'
-SPMO,False,0,No module named 'scipy'
-SPYG,False,0,No module named 'scipy'
-STIP,False,0,No module named 'scipy'
-TAIL,False,0,No module named 'sklearn'
-TIP,False,0,No module named 'scipy'
-TIPZ,False,0,No module named 'scipy'
-TLH,False,0,No module named 'scipy'
-TLT,False,0,No module named 'scipy'
-URA,False,0,No module named 'scipy'
-URNM,False,0,No module named 'scipy'
-USMV,False,0,No module named 'scipy'
-V,False,0,No module named 'sklearn'
-VALQ,False,0,No module named 'scipy'
-VFQY,False,0,No module named 'scipy'
-VGLT,False,0,No module named 'scipy'
-VNQ,False,0,No module named 'scipy'
-VOO,False,0,No module named 'scipy'
-VOX,False,0,No module named 'sklearn'
-VT,False,0,No module named 'scipy'
-VTI,False,0,No module named 'scipy'
-VTIP,False,0,No module named 'scipy'
-VTV,False,0,No module named 'scipy'
-WEAT,False,0,No module named 'scipy'
-WM,False,0,No module named 'scipy'
-WPM,False,0,No module named 'scipy'
-XAR,False,0,No module named 'scipy'
-XBI,False,0,No module named 'scipy'
-XLE,False,0,No module named 'scipy'
-XLF,False,0,No module named 'scipy'
-XLI,False,0,No module named 'scipy'
-XLK,False,0,No module named 'scipy'
-XLP,False,0,No module named 'scipy'
-XLU,False,0,No module named 'scipy'
-XLV,False,0,No module named 'scipy'
-XSD,False,0,No module named 'scipy'
-XSW,False,0,No module named 'scipy'
-XT,False,0,No module named 'scipy'
-ZROZ,False,0,No module named 'scipy'
+ACWV,True,3738,
+AGG,True,5769,
+AIRR,True,3140,
+AMLP,True,4030,
+AQWA,True,1356,
+ARKG,True,2976,
+ARKK,True,2976,
+ARKQ,True,2999,
+ARKW,True,2999,
+ARKX,True,1364,
+AVDE,True,1743,
+AVDV,True,1743,
+AVES,True,1236,
+AVUS,True,1743,
+AVUV,True,1743,
+BIL,True,4847,
+BOTZ,True,2507,
+BRK-B,True,6707,
+BTAL,True,3765,
+CANE,True,3761,
+CBOE,True,4080,
+CEG,True,1160,
+CIBR,True,2807,
+CLOU,True,1856,
+CME,True,5972,
+COIN,True,1354,
+COPX,True,4119,
+CORN,True,4084,
+COWZ,True,2436,
+CTA,True,1127,
+CXSE,True,3507,
+DBMF,True,1841,
+DFAS,True,1312,
+DIVO,True,2441,
+EDV,True,4679,
+EFAV,True,3738,
+EMB,True,4705,
+EMXC,True,2289,
+ESGD,True,2519,
+EUAD,True,467,
+EWA,True,6707,
+EWC,True,6707,
+EWG,True,6707,
+EWJ,True,6707,
+EWT,True,6587,
+EWU,True,6707,
+EWZ,True,6573,
+FNDC,True,3282,
+FNDE,True,3282,
+FNDF,True,3282,
+FNDX,True,3282,
+FNV,True,4713,
+FTEC,True,3233,
+GD,True,6707,
+GDX,True,5103,
+GDXJ,True,4227,
+GLD,True,5481,
+GLDM,True,2058,
+GOVZ,True,1491,
+GRID,True,4223,
+GUNR,True,3758,
+HACK,True,2968,
+HYG,True,4881,
+IAI,True,5114,
+IBB,True,6427,
+IBIT,True,663,
+IBKR,True,4864,
+ICE,True,5230,
+IEF,True,6063,
+IEMG,True,3483,
+IGV,True,6320,
+IHAK,True,1815,
+IHI,True,5114,
+INDA,True,3666,
+ITA,True,5114,
+IUSV,True,6558,
+IVV,True,6611,
+IWD,True,6606,
+IWN,True,6563,
+IWS,True,6308,
+IXUS,True,3483,
+JEDI,True,235,
+JEPI,True,1579,
+JEPQ,True,1087,
+JQUA,True,2214,
+KMLM,True,1444,
+KOMP,True,1975,
+KRE,True,5081,
+KWEB,True,3292,
+LMT,True,6707,
+LQD,True,6063,
+LTPZ,True,4273,
+MOAT,True,3610,
+MSCI,True,4728,
+MTUM,True,3365,
+NDAQ,True,6083,
+NLR,True,4793,
+NOC,True,6707,
+NUKZ,True,655,
+PALL,True,4188,
+PAVE,True,2386,
+PDBC,True,2971,
+PPA,True,5245,
+PPLT,True,4188,
+PRNT,True,2545,
+PSCI,True,4128,
+PSLV,True,3984,
+QQEW,True,5117,
+QTUM,True,2009,
+QUAL,True,3302,
+REMX,True,3985,
+ROBO,True,3235,
+ROKT,True,1975,
+RPV,True,5156,
+RTX,True,6707,
+SCHD,True,3738,
+SCHG,True,4192,
+SCHP,True,4044,
+SCHX,True,4233,
+SETM,True,899,
+SHLD,True,745,
+SHY,True,6063,
+SIL,True,4119,
+SILJ,True,3460,
+SKYY,True,3813,
+SMH,True,6601,
+SOXX,True,6322,
+SPDW,True,4870,
+SPGI,True,6707,
+SPLV,True,3855,
+SPMO,True,2739,
+SPYG,True,6518,
+STIP,True,3960,
+TAIL,True,2365,
+TIP,True,5721,
+TIPZ,True,4272,
+TLH,True,4942,
+TLT,True,6063,
+URA,True,3979,
+URNM,True,1695,
+USMV,True,3738,
+V,True,4644,
+VALQ,True,2170,
+VFQY,True,2148,
+VGLT,True,4192,
+VNQ,True,5517,
+VOO,True,4020,
+VOX,True,5517,
+VT,True,4575,
+VTI,True,6341,
+VTIP,True,3489,
+VTV,True,5684,
+WEAT,True,3761,
+WM,True,6707,
+WPM,True,5324,
+XAR,True,3753,
+XBI,True,5176,
+XLE,True,6707,
+XLF,True,6707,
+XLI,True,6707,
+XLK,True,6707,
+XLP,True,6707,
+XLU,True,6707,
+XLV,True,6707,
+XSD,True,5176,
+XSW,True,3753,
+XT,True,2879,
+ZROZ,True,4232,
