@@ -24,6 +24,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262   # v4
+        with:
+          # Check out the branch tip at run time, not the commit recorded when
+          # the run was queued: a run held back by the concurrency group would
+          # otherwise start from a stale commit and its push would be rejected.
+          ref: ${{ github.ref_name }}
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065   # v5
         with:
           python-version: "3.11"
@@ -40,4 +45,5 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add prices pull_status.csv validation.csv monthly_returns.csv
           git commit -m "refresh $(date -u +%F)" || echo "no changes"
-          git push
+          # If the branch moved while we were pulling, replay our commit on top.
+          git push || { git pull --rebase origin "$GITHUB_REF_NAME" && git push; }
