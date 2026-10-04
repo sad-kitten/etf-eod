@@ -8,7 +8,7 @@ by a GitHub Actions workflow and committed back to this repository as plain CSV 
 | Path | What it is |
 |---|---|
 | `tickers.txt` | The universe: one Yahoo Finance symbol per line, `#` starts a comment. |
-| `prices/<SYMBOL>.csv` | One file per symbol with daily history from 2000-01-01. Dashes are removed from the file name (`BRK-B` -> `prices/BRKB.csv`). |
+| `prices/<SYMBOL>.csv` | One file per symbol with daily history from 2000-01-01. Dashes are removed from the file name (`BRK-B` -> `prices/BRKB.csv`); exchange suffixes keep their dot (`CSU.TO` -> `prices/CSU.TO.csv`, `4194.T` -> `prices/4194.T.csv`). |
 | `pull_status.csv` | Result of the latest pull, one row per symbol. |
 | `validation.csv` | Data-quality summary for every file in `prices/`. |
 | `monthly_returns.csv` | Wide panel of month-end `Adj_Close` percent changes, one column per symbol. |

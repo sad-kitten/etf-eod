@@ -1,11 +1,16 @@
 # Yahoo Finance symbols pulled by scripts/pull.py (one per line, '#' starts a comment).
 # Order does not matter. Files land in prices/<SYMBOL-without-dashes>.csv (BRK-B -> BRKB.csv).
 # Blank lines and inline comments are ignored; symbols are upper-cased.
+# Exchange suffixes keep their dot in the file name (CSU.TO -> CSU.TO.csv, 4194.T -> 4194.T.csv).
 
+3697.T
+3923.T
+4194.T
 ACWV
 AGG
 AIRR
 AMLP
+APPF
 AQWA
 ARKG
 ARKK
@@ -31,6 +36,7 @@ COIN
 COPX
 CORN
 COWZ
+CSU.TO
 CTA
 CXSE
 DBMF
@@ -88,21 +94,27 @@ JEPI
 JEPQ
 JQUA
 KMLM
+KNSL
 KOMP
 KRE
+KSPI
 KWEB
 LMT
 LQD
 LTPZ
+MEDP
 MOAT
 MSCI
 MTUM
 NDAQ
 NLR
 NOC
+NU
 NUKZ
+ONON
 PALL
 PAVE
+PAY
 PDBC
 PPA
 PPLT
@@ -141,6 +153,7 @@ TIP
 TIPZ
 TLH
 TLT
+TOI.V
 URA
 URNM
 USMV
