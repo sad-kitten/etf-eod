@@ -217,3 +217,28 @@ XSD
 XSW
 XT
 ZROZ
+XLB  # VS 2026-10-19 US Materials sector
+XLC  # VS 2026-10-19 US Communication Services
+XLRE  # VS 2026-10-19 US Real Estate
+XLY  # VS 2026-10-19 US Consumer Discretionary
+RSP  # VS 2026-10-19 S&P 500 equal weight
+IJR  # VS 2026-10-19 US small cap (S&P 600)
+IJH  # VS 2026-10-19 US mid cap (S&P 400)
+IWM  # VS 2026-10-19 US small cap (Russell 2000)
+VBR  # VS 2026-10-19 US small value
+VLUE  # VS 2026-10-19 US value factor
+KBE  # VS 2026-10-19 US banks
+KIE  # VS 2026-10-19 US insurance
+ITB  # VS 2026-10-19 US homebuilders
+XHB  # VS 2026-10-19 US homebuilding & products
+XRT  # VS 2026-10-19 US retail
+XOP  # VS 2026-10-19 US oil & gas E&P
+OIH  # VS 2026-10-19 Oil services
+XME  # VS 2026-10-19 US metals & mining
+JETS  # VS 2026-10-19 Airlines
+IYT  # VS 2026-10-19 US transportation
+IHF  # VS 2026-10-19 US healthcare providers
+TAN  # VS 2026-10-19 Solar
+ICLN  # VS 2026-10-19 Global clean energy
+LIT  # VS 2026-10-19 Lithium & battery
+EFA  # VS 2026-10-19 Developed ex-US
