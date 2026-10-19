@@ -14,6 +14,7 @@ on:
       - "scripts/**"
   schedule:
     - cron: "20 9 * * 1"   # Mondays 09:20 UTC
+    - cron: "20 10 * * 2"  # Tuesdays 10:20 UTC: picks up Value Scout additions before the 13:05 UTC run
 permissions:
   contents: write
 concurrency:
@@ -33,6 +34,10 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install --quiet "yfinance[repair]" pandas   # [repair] = scipy + scikit-learn, needed for repair=True
+      - name: merge Value Scout additions
+        env:
+          VS_ADDITIONS_CSV_URL: ${{ vars.VS_ADDITIONS_CSV_URL }}
+        run: python scripts/merge_additions.py
       - name: pull
         env:
           SUBSET: ${{ inputs.tickers }}
@@ -43,7 +48,7 @@ jobs:
         run: |
           git config user.name "gh-actions"
           git config user.email "actions@users.noreply.github.com"
-          git add prices pull_status.csv validation.csv monthly_returns.csv
+          git add tickers.txt prices pull_status.csv validation.csv monthly_returns.csv
           git commit -m "refresh $(date -u +%F)" || echo "no changes"
           # If the branch moved while we were pulling, replay our commit on top.
           git push || { git pull --rebase origin "$GITHUB_REF_NAME" && git push; }
