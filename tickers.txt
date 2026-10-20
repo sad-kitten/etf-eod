@@ -242,3 +242,16 @@ TAN  # VS 2026-10-19 Solar
 ICLN  # VS 2026-10-19 Global clean energy
 LIT  # VS 2026-10-19 Lithium & battery
 EFA  # VS 2026-10-19 Developed ex-US
+EFV  # VS 2026-10-19 Developed ex-US value
+VGK  # VS 2026-10-19 Europe
+EWW  # VS 2026-10-19 Mexico
+EWY  # VS 2026-10-19 South Korea
+EWQ  # VS 2026-10-19 France
+EWL  # VS 2026-10-19 Switzerland
+EWP  # VS 2026-10-19 Spain
+EWI  # VS 2026-10-19 Italy
+EWD  # VS 2026-10-19 Sweden
+EIDO  # VS 2026-10-19 Indonesia
+EPOL  # VS 2026-10-19 Poland
+EZA  # VS 2026-10-19 South Africa
+EWS  # VS 2026-10-19 Singapore
