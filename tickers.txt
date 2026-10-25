@@ -255,3 +255,5 @@ EIDO  # VS 2026-10-19 Indonesia
 EPOL  # VS 2026-10-19 Poland
 EZA  # VS 2026-10-19 South Africa
 EWS  # VS 2026-10-19 Singapore
+UTHR  # 2026-10-25 Addendum 56 single-name exception (owner-approved)
+VRTX  # 2026-10-25 Addendum 56 watch list
