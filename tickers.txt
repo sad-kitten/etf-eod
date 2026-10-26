@@ -257,3 +257,4 @@ EZA  # VS 2026-10-19 South Africa
 EWS  # VS 2026-10-19 Singapore
 UTHR  # 2026-10-25 Addendum 56 single-name exception (owner-approved)
 VRTX  # 2026-10-25 Addendum 56 watch list
+ZTS  # 2026-10-26 Addendum 57 single-name (owner-approved position; watch list)
