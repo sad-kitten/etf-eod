@@ -1,0 +1,26 @@
+Scenario_ID,Scenario,Weight_raw,Severity_1to5,Canonical_Parent,Definition,Weight_Normalized
+1,Base Case – Managed Re-industrialization,17.0,2,x,x,0.14655172413793102
+2,Reflation / Industrial Up-Cycle,10.0,2,x,x,0.08620689655172414
+3,Stagflation / Fiscal Dominance,7.0,4,x,x,0.0603448275862069
+4,Debt Overhang – Financial Repression,4.0,4,x,x,0.034482758620689655
+5,Credit Stress – Shadow/Private Credit Accident,3.0,4,x,x,0.02586206896551724
+6,AI Breakout – Productivity Boom / Concentration,2.5,3,x,x,0.021551724137931036
+7,AI Breakout – Energy/Infrastructure Bottleneck,1.5,3,x,x,0.01293103448275862
+8,Geopolitical Fragmentation – Trade/Tech Bifurcation,4.0,4,x,x,0.034482758620689655
+9,Geopolitical Fragmentation – Cyber Systemic Event,4.0,5,x,x,0.034482758620689655
+10,Cronyism / Policy Distortion,6.0,3,x,x,0.05172413793103448
+11,China Hard Landing,4.0,4,x,x,0.034482758620689655
+12,Taiwan Hostilities / Kinetic Shock,4.0,5,x,x,0.034482758620689655
+13,Credit Accident (U.S. Regional),3.0,4,x,x,0.02586206896551724
+14,Space Race / Tech-Industrial Rivalry,5.0,3,x,x,0.04310344827586207
+15,Pandemic / Bio Disruption,3.0,4,x,x,0.02586206896551724
+16,Climate Transition Stress – Policy/Stranding Shock,1.5,3,x,x,0.01293103448275862
+17,Climate Stress – Physical/Insurance Retreat,1.5,4,x,x,0.01293103448275862
+18,Energy Shock / Supply Constraint,6.0,5,x,x,0.05172413793103448
+19,Political Polarization / Governance Shock,5.0,4,x,x,0.04310344827586207
+20,Liquidity: JGB + US Fiscal Dominance,6.0,5,x,x,0.05172413793103448
+21,Deflationary Bust – Balance-Sheet Recession,4.0,4,x,x,0.034482758620689655
+22,USD / Reserve-Institution Crisis,4.0,5,x,x,0.034482758620689655
+23,Broad Kinetic Conflict – Multi-Theater,3.0,5,x,x,0.02586206896551724
+24,AI Abundance – Disinflationary Boom,1.5,2,x,x,0.01293103448275862
+25,AI Buildout Disappointment – Power/Capex De-rating,5.5,3,x,x,0.04741379310344827
