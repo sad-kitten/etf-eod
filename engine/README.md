@@ -8,7 +8,7 @@ Run from a clone of this repository:
 
 ```
 source engine/env57.sh
-SINGLES_MAX=99 python3 report_u.py books57.json out.csv [Book1,Book2]
+SINGLES_MAX=99 BRKB_CAP=0.15 MIN_HOLD=0.01 python3 report_u.py books57.json out.csv [Book1,Book2]
 ```
 
 - Price panel: `../monthly_returns.csv` (this repo). 48-month σ window ends ENGINEV2_END=2026-08.
@@ -20,3 +20,4 @@ SINGLES_MAX=99 python3 report_u.py books57.json out.csv [Book1,Book2]
 Validation (2026-10-26): C5_SMH3b reproduces Report_T50_R56 exactly (geo 7.596, γ3 2.43, P5 1.29; U1 7.44 / 1.39 / 0.85);
 R56_A reproduces the Addendum 56 real-UTHR postscript (7.59 / 2.81 / 1.63; U1 7.50 / 2.01 / 1.10).
 Search: `SEEDS_FILE=... OUTJSON=... PREF=1 LOCK=UTHR:0.05 EXCL=<bonds,...> python3 search_f.py SEED` (seed must be admissible).
+- 2026-10-26 owner rules: BRKB_CAP=0.15 (BRK.B treated like a fund; outside the 20% singles total), MIN_HOLD=0.01.

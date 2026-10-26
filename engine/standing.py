@@ -11,13 +11,14 @@ def feasible(w):
     if w.min() < -1e-12 or abs(w.sum()-1) > 1e-9: return False
     held = w > 1e-9
     if held.sum() > 14: return False
-    if np.any(w[held] < 0.02 - 1e-9): return False
+    if np.any(w[held] < float(os.environ.get('MIN_HOLD', '0.02')) - 1e-9): return False
     if w.max() > ETF_CAP + 1e-9: return False
     from core import PMEQ, SEMIS, DEF, NUC, BAL
+    _bc = float(os.environ.get('BRKB_CAP', '0.05'))   # 2026-10-26 owner: BRKB up to 15%, treated like a fund
     for t in SINGLES:
-        if t in IDX and w[IDX[t]] > 0.05 + 1e-9: return False
+        if t in IDX and w[IDX[t]] > (_bc if t == 'BRKB' else 0.05) + 1e-9: return False
     ssum = lambda ts: sum(w[IDX[t]] for t in ts if t in IDX)
-    if ssum(SINGLES) > float(os.environ.get("SINGLES_TOT", "0.20")) + 1e-9: return False
+    if ssum([t for t in SINGLES if not (t == 'BRKB' and _bc > 0.05)]) > float(os.environ.get('SINGLES_TOT', '0.20')) + 1e-9: return False
     if ssum(PMEQ) > 0.10 + 1e-9: return False
     if ssum(SEMIS) > 0.12 + 1e-9: return False
     if ssum(DEF) > 0.35 + 1e-9: return False
