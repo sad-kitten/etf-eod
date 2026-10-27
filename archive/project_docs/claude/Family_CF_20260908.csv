@@ -1,0 +1,3 @@
+Port,geo_x,geo_cagr,ce1_cagr,ce3_x,ce3_cagr,ce5_x,ce5_cagr,SACE_x,cagr_P5,cagr_P25,cagr_med,cagr_P75,cagr_P95,spread_P5_P95,IQR,p_ge3,p_ge4,decade_sd,worst_scen,scen_lt6,scen_sd,ls_geo_x,vol48
+X1_F2_noFNV,5.784,4.49,4.49,2.793,2.6,1.419,0.88,3.09,0.8,2.97,4.5,6.03,8.22,7.42,3.06,74.5,58.8,3.98,5.71,2,1.48,2.667,11.76
+X2_F2_DBMF15,5.815,4.5,4.5,2.992,2.78,1.618,1.21,3.101,0.98,3.05,4.51,5.97,8.06,7.09,2.92,75.8,59.5,3.84,5.94,1,1.33,2.677,11.36

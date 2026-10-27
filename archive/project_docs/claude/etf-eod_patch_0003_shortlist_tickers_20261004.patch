@@ -1,0 +1,117 @@
+From 55e72a871c25941a9c0dbca3c0c78f3eb1c5e21d Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Sun, 4 Oct 2026 15:02:21 -0500
+Subject: [PATCH] Add the 2026-10-04 multibagger shortlist to the universe (12
+ symbols) [skip ci]
+
+Adds the ten best fits from the investing Project's multibagger screen
+(claude/Multibagger_Screen_20261004.md, section 11) plus the two Japanese
+alternates, so the weekly refresh builds their price history for 48-month
+realized volatility and drawdown work:
+
+  APPF  AppFolio            NU     Nu Holdings
+  CSU.TO Constellation Soft. ONON   On Holding
+  KNSL  Kinsale Capital      PAY    Paymentus
+  KSPI  Kaspi.kz (ADS)       TOI.V  Topicus.com
+  MEDP  Medpace              4194.T Visional
+  3923.T Rakus               3697.T SHIFT
+
+First non-US listings in the universe. No script change is needed:
+pull.py writes prices/CSU.TO.csv, prices/4194.T.csv etc. (only dashes are
+stripped) and validate.py maps the stem back to the symbol; verified with a
+dry run of validate.py on dotted file names. tickers.txt stays alphabetical
+(ASCII order: digits first). README documents the suffix rule.
+
+[skip ci] so the branch push does not commit a full refresh; after merging,
+dispatch refresh-prices with
+tickers=3697.T,3923.T,4194.T,APPF,CSU.TO,KNSL,KSPI,MEDP,NU,ONON,PAY,TOI.V
+or wait for the Monday 09:20 UTC run.
+
+Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01PUXkJtX3eVFa6rtALU2CPM
+---
+ README.md   |  2 +-
+ tickers.txt | 13 +++++++++++++
+ 2 files changed, 14 insertions(+), 1 deletion(-)
+
+diff --git a/README.md b/README.md
+index 1e98938..e73a7ea 100644
+--- a/README.md
++++ b/README.md
+@@ -8,7 +8,7 @@ by a GitHub Actions workflow and committed back to this repository as plain CSV
+ | Path | What it is |
+ |---|---|
+ | `tickers.txt` | The universe: one Yahoo Finance symbol per line, `#` starts a comment. |
+-| `prices/<SYMBOL>.csv` | One file per symbol with daily history from 2000-01-01. Dashes are removed from the file name (`BRK-B` -> `prices/BRKB.csv`). |
++| `prices/<SYMBOL>.csv` | One file per symbol with daily history from 2000-01-01. Dashes are removed from the file name (`BRK-B` -> `prices/BRKB.csv`); exchange suffixes keep their dot (`CSU.TO` -> `prices/CSU.TO.csv`, `4194.T` -> `prices/4194.T.csv`). |
+ | `pull_status.csv` | Result of the latest pull, one row per symbol. |
+ | `validation.csv` | Data-quality summary for every file in `prices/`. |
+ | `monthly_returns.csv` | Wide panel of month-end `Adj_Close` percent changes, one column per symbol. |
+diff --git a/tickers.txt b/tickers.txt
+index 944f125..a8ad744 100644
+--- a/tickers.txt
++++ b/tickers.txt
+@@ -1,11 +1,16 @@
+ # Yahoo Finance symbols pulled by scripts/pull.py (one per line, '#' starts a comment).
+ # Order does not matter. Files land in prices/<SYMBOL-without-dashes>.csv (BRK-B -> BRKB.csv).
+ # Blank lines and inline comments are ignored; symbols are upper-cased.
++# Exchange suffixes keep their dot in the file name (CSU.TO -> CSU.TO.csv, 4194.T -> 4194.T.csv).
+ 
++3697.T
++3923.T
++4194.T
+ ACWV
+ AGG
+ AIRR
+ AMLP
++APPF
+ AQWA
+ ARKG
+ ARKK
+@@ -31,6 +36,7 @@ COIN
+ COPX
+ CORN
+ COWZ
++CSU.TO
+ CTA
+ CXSE
+ DBMF
+@@ -88,21 +94,27 @@ JEPI
+ JEPQ
+ JQUA
+ KMLM
++KNSL
+ KOMP
+ KRE
++KSPI
+ KWEB
+ LMT
+ LQD
+ LTPZ
++MEDP
+ MOAT
+ MSCI
+ MTUM
+ NDAQ
+ NLR
+ NOC
++NU
+ NUKZ
++ONON
+ PALL
+ PAVE
++PAY
+ PDBC
+ PPA
+ PPLT
+@@ -141,6 +153,7 @@ TIP
+ TIPZ
+ TLH
+ TLT
++TOI.V
+ URA
+ URNM
+ USMV
+-- 
+2.43.0
+

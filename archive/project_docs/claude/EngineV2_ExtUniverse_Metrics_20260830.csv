@@ -1,0 +1,4 @@
+Portfolio,WER_pct,vol48_pct,geo_PathCE,geo_PathCE_haircut,RCEW40_robust,DRB40,R3AF,worst_net_CAGR_pct,worst_scenario,SWCAGR_pct,Sortino48,maxDD48_pct,PathCE_robG,P10_robG,P5_robG,ruin_robG,PathCE_robL,P10_robL,P5_robL,ruin_robL,PathCE_canG,P10_canG,P5_canG,ruin_canG,PathCE_canL,P10_canL,P5_canL,ruin_canL
+P1_baseline,0.532,11.62,10.71,10.71,12.93,0.0,-0.0539,5.58,Taiwan Hostilities / Kinetic Shock,8.4,1.81,-7.9,7.61,2.33,1.37,366,11.25,3.37,2.12,186,10.39,3.2,2.0,198,14.78,4.57,3.0,94
+R2_evolution,0.494,12.07,13.47,12.79,16.05,0.0,-0.0452,6.04,Taiwan Hostilities / Kinetic Shock,8.94,1.8,-8.1,9.53,2.81,1.67,297,14.22,4.1,2.59,145,12.99,3.87,2.43,162,18.73,5.61,3.69,75
+R1_maximin,0.387,12.33,16.09,14.86,18.84,0.0,-0.0552,6.22,Taiwan Hostilities / Kinetic Shock,9.38,1.9,-8.2,11.27,3.22,1.92,259,16.84,4.75,2.99,132,15.59,4.53,2.86,137,22.64,6.62,4.36,55

@@ -1,0 +1,77 @@
+Ticker,Grade,Meaning
+AIRR,B,thesis-consistent thematic with history
+AVDE,A,empirically corroborated / low model risk
+AVUV,A,empirically corroborated / low model risk
+BOTZ,B,thesis-consistent thematic with history
+CIBR,B,thesis-consistent thematic with history
+COWZ,A,empirically corroborated / low model risk
+DFAS,A,empirically corroborated / low model risk
+GRID,B,thesis-consistent thematic with history
+IHI,B,thesis-consistent thematic with history
+KOMP,B,thesis-consistent thematic with history
+MOAT,A,empirically corroborated / low model risk
+NLR,B,thesis-consistent thematic with history
+NUKZ,C,"model-derived, short-history, or audit-flagged (25% haircut toward column median by default in optimization)"
+PAVE,B,thesis-consistent thematic with history
+PRNT,B,thesis-consistent thematic with history
+QQEW,B,thesis-consistent thematic with history
+QUAL,A,empirically corroborated / low model risk
+ROBO,B,thesis-consistent thematic with history
+ROKT,B,thesis-consistent thematic with history
+SCHD,A,empirically corroborated / low model risk
+SETM,B,thesis-consistent thematic with history
+SHLD,B,thesis-consistent thematic with history
+SOXX,B,thesis-consistent thematic with history
+SPLV,A,empirically corroborated / low model risk
+USMV,A,empirically corroborated / low model risk
+VALQ,A,empirically corroborated / low model risk
+VFQY,A,empirically corroborated / low model risk
+XAR,B,thesis-consistent thematic with history
+XBI,B,thesis-consistent thematic with history
+XLE,B,thesis-consistent thematic with history
+XSD,B,thesis-consistent thematic with history
+XT,B,thesis-consistent thematic with history
+CTA,A,empirically corroborated / low model risk
+CTA_OVERLAY,A,empirically corroborated / low model risk
+CME,A,empirically corroborated / low model risk
+CBOE,A,empirically corroborated / low model risk
+ICE,A,empirically corroborated / low model risk
+SPGI,A,empirically corroborated / low model risk
+KMLM,A,empirically corroborated / low model risk
+DBMF,A,empirically corroborated / low model risk
+AVDV,A,empirically corroborated / low model risk
+AVES,A,empirically corroborated / low model risk
+IHAK,B,thesis-consistent thematic with history
+QTUM,C,"model-derived, short-history, or audit-flagged (25% haircut toward column median by default in optimization)"
+GLDM,A,empirically corroborated / low model risk
+IVV,A,empirically corroborated / low model risk
+AVUS,A,empirically corroborated / low model risk
+CEG,C,"model-derived, short-history, or audit-flagged (25% haircut toward column median by default in optimization)"
+EUAD,C,"model-derived, short-history, or audit-flagged (25% haircut toward column median by default in optimization)"
+GD,A,empirically corroborated / low model risk
+GLD,A,empirically corroborated / low model risk
+HACK,B,thesis-consistent thematic with history
+IBKR,A,empirically corroborated / low model risk
+IEF,A,empirically corroborated / low model risk
+IEF/aggregate-bond proxy,A,empirically corroborated / low model risk
+ITA,B,thesis-consistent thematic with history
+IXUS,A,empirically corroborated / low model risk
+JQUA,A,empirically corroborated / low model risk
+LMT,A,empirically corroborated / low model risk
+MSCI,A,empirically corroborated / low model risk
+NDAQ,A,empirically corroborated / low model risk
+NOC,A,empirically corroborated / low model risk
+PPA,B,thesis-consistent thematic with history
+PSCI,B,thesis-consistent thematic with history
+RTX,A,empirically corroborated / low model risk
+SMH,B,thesis-consistent thematic with history
+URNM,C,"model-derived, short-history, or audit-flagged (25% haircut toward column median by default in optimization)"
+VOO,A,empirically corroborated / low model risk
+VT,A,empirically corroborated / low model risk
+VTI,A,empirically corroborated / low model risk
+VTSAX,A,empirically corroborated / low model risk
+XLV,A,empirically corroborated / low model risk
+ZTS_proxy,C,"model-derived, short-history, or audit-flagged (25% haircut toward column median by default in optimization)"
+JEDI,C,"model-derived, short-history, or audit-flagged (25% haircut toward column median by default in optimization)"
+TLT,C,"model-derived, short-history, or audit-flagged (25% haircut toward column median by default in optimization)"
+GOVZ,C,"model-derived, short-history, or audit-flagged (25% haircut toward column median by default in optimization)"

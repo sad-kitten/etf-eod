@@ -1,0 +1,32 @@
+scenario_code,scenario_name,source_basis,is_direct_source,derivation_note
+CM01_BaseGrind,Base grind / managed reindustrialization,Base,True,direct
+CM02_ReflationIndustrial,Reflation / industrial up-cycle,Refl,True,direct
+CM03_FiscalStagflation,Stagflation / fiscal dominance,Stag,True,direct
+CM04_DebtRepression,Debt overhang / financial repression,Debt,True,direct
+CM05_CreditPrivateStress,Credit stress / shadow-private accident,Credit,True,direct
+CM06_AIComputeBoom,AI compute boom,AIProd,True,direct
+CM07_AIPowerBottleneck,AI power bottleneck,AIPower,True,direct
+CM08_AICapexDisappointment,AICapexDisappointment,0.55*Credit+0.30*Base+0.15*AIProd,False,Model-derived overlay (unchanged from CM24 pipeline).
+CM09_AIPlatformConcentration,AIPlatformConcentration,0.70*AIProd+0.30*Crony,False,Model-derived overlay (unchanged from CM24 pipeline).
+CM10_CyberSystemic,Cyber systemic event,Cyber,True,direct
+CM11_PostQuantumMigration,PostQuantumMigration,0.60*Cyber+0.40*AIProd + overlays,False,Model-derived overlay (unchanged from CM24 pipeline).
+CM12_QuantumBreakout,QuantumBreakout,0.65*AIProd+0.35*Space + overlays,False,Model-derived overlay (unchanged from CM24 pipeline).
+CM13_QuantumDelay,QuantumDelay,0.60*Credit+0.40*AIProd - overlays,False,Model-derived overlay (unchanged from CM24 pipeline).
+CM14_SpaceDefenseAutonomy,Space-defense / autonomy race,Space,True,direct
+CM15_TaiwanKineticSemis,Kinetic Taiwan / semis shock,Taiwan,True,direct
+CM16_DefenseProcurementSqueeze,DefenseProcurementSqueeze,0.70*Space+0.30*Stag - defense overlay,False,Model-derived overlay (unchanged from CM24 pipeline).
+CM17_GeoFragmentationBlocs,Geo fragmentation / trade-tech blocs,TradeTech,True,direct
+CM18_ChinaHardLanding,China hard landing,China,True,direct
+CM19_EnergyShock,Energy shock / supply constraint,Energy,True,direct
+CM20_GridDelay,GridDelay,0.50*AIPower+0.30*Political+0.20*ClimPol - grid overlay,False,Model-derived overlay (unchanged from CM24 pipeline).
+CM21_ClimateTransition,Climate transition / stranding,ClimPol,True,direct
+CM22_ClimatePhysicalInsurance,Climate physical / insurance retreat,ClimPhys,True,direct
+CM23_PoliticalGovernanceShock,Political polarization / governance,Political,True,direct
+CM24_JGBUSFiscalDurationShock,Liquidity: JGB + US fiscal dominance,JGB,True,direct
+CM25_CronyismPolicyDistortion,Cronyism / policy distortion,Crony,True,RESTORED direct (dropped by CM24 view)
+CM26_CreditAccidentUSRegional,Credit accident (U.S. regional),USCredit,True,RESTORED direct (dropped by CM24 view)
+CM27_PandemicBioDisruption,Pandemic / bio disruption,Pandemic,True,RESTORED direct (dropped by CM24 view)
+CM28_DeflationaryBust,Deflationary bust / balance-sheet recession,Defl,True,direct (new in R6)
+CM29_USDReserveInstitutionCrisis,USD / reserve-institution crisis,USDCrisis,True,direct (new in R6)
+CM30_BroadKineticConflict,Broad kinetic conflict / multi-theater,War,True,direct (new in R6)
+CM31_AIAbundanceDisinflation,AI abundance / disinflationary boom,Abund,True,direct (new in R6)

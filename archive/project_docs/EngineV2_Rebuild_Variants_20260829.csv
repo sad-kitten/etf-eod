@@ -1,0 +1,13 @@
+variant,pi_weighting,drift_convention,sigma_pct,WER_pct,PathCE_multiple,delta_vs_12.35,P50,P10,ruin_of_60k,note
+V1,robust_50_25_25,G,11.618,0.532,7.61,-4.74,9.3,2.3,365,primary; MISMATCH
+V2,robust_50_25_25,L,11.618,0.532,11.25,-1.10,12.7,3.4,186,closest declared variant
+V3,canonical,G,11.618,0.532,10.39,-1.96,11.8,3.2,198,post-hoc documentary variant
+V4,canonical,L,11.618,0.532,14.78,+2.43,16.1,4.6,94,post-hoc documentary variant
+S1,robust(EVG20260612 bench),G,11.618,0.532,7.78,,,,,benchmark sensitivity
+S2,robust(EVG20260612 bench),L,11.618,0.532,11.79,,,,,benchmark sensitivity
+S3,robust,G,11.618,0.632,7.13,,,,,ER+0.10pp
+S4,robust,G,11.618,0.432,7.96,,,,,ER-0.10pp
+S5,robust,L,11.618,0.632,10.76,,,,,ER+0.10pp
+S6,robust,L,11.618,0.432,11.95,,,,,ER-0.10pp
+S7,robust,G,12.360,0.532,6.44,,,,,vol at Evergreen 12.36
+S8,robust,L,12.360,0.532,10.81,,,,,vol at Evergreen 12.36

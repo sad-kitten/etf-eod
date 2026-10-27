@@ -1,0 +1,129 @@
+Ticker,Grade,Meaning
+AIRR,B,thesis-consistent thematic with history
+AVDE,A,empirically corroborated / low model risk
+AVUV,A,empirically corroborated / low model risk
+BOTZ,B,thesis-consistent thematic with history
+CIBR,B,thesis-consistent thematic with history
+COWZ,A,empirically corroborated / low model risk
+DFAS,A,empirically corroborated / low model risk
+GRID,B,thesis-consistent thematic with history; geometric-consistency correction 2026-09-04: -1.51pp (half the measured over-claim)
+IHI,B,thesis-consistent thematic with history
+KOMP,B,thesis-consistent thematic with history
+MOAT,A,empirically corroborated / low model risk; geometric-consistency correction 2026-09-04: -0.29pp (half the measured over-claim)
+NLR,B,thesis-consistent thematic with history
+NUKZ,C,"model-derived, short-history, or audit-flagged (25% haircut toward column median by default in optimization); <36mo rule 2026-09-09: anchor NLR (corr 0.88), premium +2.59 -> capped at +1.0 (shift -1.59)"
+PAVE,B,thesis-consistent thematic with history
+PRNT,B,thesis-consistent thematic with history
+QQEW,B,thesis-consistent thematic with history
+QUAL,A,empirically corroborated / low model risk
+ROBO,B,thesis-consistent thematic with history
+ROKT,B,thesis-consistent thematic with history
+SETM,B,thesis-consistent thematic with history
+SHLD,B,"thesis-consistent thematic with history; <36mo rule 2026-09-09: anchor PPA (corr 0.66), premium +0.51 within cap"
+SOXX,B,thesis-consistent thematic with history
+SPLV,A,empirically corroborated / low model risk
+USMV,A,empirically corroborated / low model risk
+VALQ,A,empirically corroborated / low model risk
+VFQY,A,empirically corroborated / low model risk
+XAR,C,audit-flagged 2026-09-01 (deck worst 80th pctl vs -8.2% worst-decile participation); 25% haircut by default
+XBI,B,thesis-consistent thematic with history
+XLE,B,thesis-consistent thematic with history; geometric-consistency correction 2026-09-04: -0.41pp (half the measured over-claim)
+XSD,B,thesis-consistent thematic with history
+XT,B,thesis-consistent thematic with history
+CTA,A,empirically corroborated / low model risk
+CTA_OVERLAY,A,empirically corroborated / low model risk
+CME,A,empirically corroborated / low model risk
+CBOE,A,empirically corroborated / low model risk
+ICE,A,empirically corroborated / low model risk
+SPGI,A,empirically corroborated / low model risk
+KMLM,A,empirically corroborated / low model risk
+DBMF,A,empirically corroborated / low model risk
+AVDV,A,empirically corroborated / low model risk
+AVES,A,empirically corroborated / low model risk
+IHAK,B,thesis-consistent thematic with history
+QTUM,C,"model-derived, short-history, or audit-flagged (25% haircut toward column median by default in optimization)"
+GLDM,A,empirically corroborated / low model risk
+IVV,A,empirically corroborated / low model risk
+AVUS,A,empirically corroborated / low model risk
+CEG,C,"Constellation, real history 2022-02.. (55 mo); row = beta-consistent base (1.10 x IVV_row, alpha t=1.68 so set to zero) + 2.0 contracted-PPA premium applied once + 1.00 x (0.6*NLR + 0.4*IVV) shape; supersedes the Addendum 12 thesis/anchor blend"
+EUAD,C,"model-derived, short-history, or audit-flagged (25% haircut toward column median by default in optimization); <36mo rule 2026-09-09: anchor ITA (corr 0.59), premium +0.53 within cap"
+GD,A,empirically corroborated / low model risk
+GLD,A,empirically corroborated / low model risk
+HACK,B,thesis-consistent thematic with history
+IBKR,A,empirically corroborated / low model risk
+IEF,A,empirically corroborated / low model risk
+IEF/aggregate-bond proxy,A,empirically corroborated / low model risk
+ITA,B,thesis-consistent thematic with history
+IXUS,A,empirically corroborated / low model risk
+JQUA,A,empirically corroborated / low model risk
+LMT,A,empirically corroborated / low model risk
+MSCI,A,empirically corroborated / low model risk
+NDAQ,A,empirically corroborated / low model risk
+NOC,A,empirically corroborated / low model risk
+PPA,B,thesis-consistent thematic with history
+PSCI,B,thesis-consistent thematic with history
+RTX,A,empirically corroborated / low model risk
+SMH,B,thesis-consistent thematic with history; geometric-consistency correction 2026-09-04: -1.45pp (half the measured over-claim)
+URNM,C,"model-derived, short-history (2020+); fundamentals-reviewed 2026-09-04: row = 0.5*thesis + 0.5*(NUKZ + 1.75x levered premium, mean premium halved)"
+VOO,A,empirically corroborated / low model risk
+VT,A,empirically corroborated / low model risk
+VTSAX,A,empirically corroborated / low model risk
+XLV,A,empirically corroborated / low model risk
+ZTS_proxy,C,"model-derived, short-history, or audit-flagged (25% haircut toward column median by default in optimization)"
+JEDI,C,"model-derived, short-history, or audit-flagged (25% haircut toward column median by default in optimization); <36mo rule 2026-09-09: no qualifying anchor, grade C"
+TLT,C,"model-derived, short-history, or audit-flagged (25% haircut toward column median by default in optimization)"
+GOVZ,C,"model-derived, short-history, or audit-flagged (25% haircut toward column median by default in optimization)"
+IAI,C,"model-derived, short-history, or audit-flagged (25% haircut toward column median by default in optimization)"
+LTPZ,C,"model-derived (R7 proxy-blend), 25% haircut by default"
+SCHP,C,"model-derived (R7 proxy-blend), 25% haircut by default"
+VTIP,C,"model-derived (R7 proxy-blend), 25% haircut by default"
+GDX,C,"model-derived (R7 proxy-blend), 25% haircut by default"
+WPM,C,"model-derived (R7 proxy-blend), 25% haircut by default"
+FNV,B,fundamentals review 2026-09-03: gold beta empirical; premium halved to +0.5; single-asset/jurisdiction risk noted
+PSLV,C,"model-derived (R7 proxy-blend), 25% haircut by default; geometric-consistency correction 2026-09-04: -5.54pp (half the measured over-claim)"
+COPX,C,"model-derived (R7 proxy-blend), 25% haircut by default"
+BRKB,B,fundamentals review 2026-09-03: quality/moat blend empirical; credit deltas trimmed to +1.0 (cash being deployed)
+WM,C,"model-derived (R7 proxy-blend), 25% haircut by default"
+INDA,C,"model-derived (R7 proxy-blend), 25% haircut by default"
+JEPI,C,"model-derived (R7 proxy-blend), 25% haircut by default"
+SPMO,C,"model-derived (R7 proxy-blend), 25% haircut by default"
+V,C,"model-derived (R7 batch-2 proxy-blend), 25% haircut by default"
+IGV,C,"model-derived (R7 batch-2 proxy-blend), 25% haircut by default"
+FTEC,C,"model-derived (R7 batch-2 proxy-blend), 25% haircut by default"
+COIN,C,"model-derived (R7 batch-2 proxy-blend), 25% haircut by default"
+EMXC,C,"model-derived (R7 batch-2 proxy-blend), 25% haircut by default"
+EWT,C,"model-derived (R7 batch-2 proxy-blend), 25% haircut by default"
+SIL,C,"model-derived (R7 batch-2 proxy-blend), 25% haircut by default"
+VTV,C,"model-derived (R7 batch-2 proxy-blend), 25% haircut by default"
+SCHG,C,"model-derived (R7 batch-2 proxy-blend), 25% haircut by default"
+IBB,C,"model-derived (R7 batch-2 proxy-blend), 25% haircut by default"
+BIL,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+SHY,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+LQD,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+AGG,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+HYG,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+EMB,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+TIP,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+STIP,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+TAIL,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+BTAL,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+XLU,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+VNQ,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+XLI,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+XLF,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+KRE,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+XLP,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+XLK,C,"model-derived (R8 proxy-blend), 25% haircut by default; geometric-consistency correction 2026-09-04: -0.57pp (half the measured over-claim)"
+AMLP,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+PDBC,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+GUNR,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+REMX,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+URA,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+AQWA,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+IEMG,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+EWJ,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+IBIT,C,"model-derived (R8 proxy-blend), 25% haircut by default; <36mo rule 2026-09-09: no qualifying anchor, grade C"
+MTUM,C,"model-derived (R8 proxy-blend), 25% haircut by default"
+VTI,B,"R8 re-anchor: IVV row -0.1 (beta 1.02, corr 1.00); old row was in a stale frame"
+SCHD,C,R8 re-anchor: 0.6 VTV + 0.4 QUAL blend; old row was in a stale frame
+RPRX,B,"Royalty Pharma, real history from etf-eod (74 mo from 2020-07); row = beta-consistent base (0.46 x IVV_row, alpha t=0.07 so set to zero) + 1.5 premium for contractual royalty structure + 0.80 x anchor shape + policy/leverage overlays"

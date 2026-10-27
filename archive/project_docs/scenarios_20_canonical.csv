@@ -1,0 +1,21 @@
+Scenario_ID,Scenario,Weight_raw,Severity_1to5,Canonical_Parent,Definition,Weight_Normalized
+1,Base Case – Managed Re-industrialization,17.0,2,Base Case – Managed Re-industrialization,Core trajectory strengthened by fiscal & industrial policy; capex/reshoring.,0.16666666666666666
+2,Reflation / Industrial Up-Cycle,10.0,2,Reflation / Industrial Up-Cycle,Broad-based capex & reshoring tailwind; inflation contained.,0.09803921568627451
+3,Stagflation / Fiscal Dominance,7.0,4,Stagflation / Fiscal Dominance,Structural deficits + supply frictions persist; growth disappoints.,0.06862745098039216
+4,Debt Overhang – Financial Repression,4.0,4,Debt Overhang / Credit Stress,Inflate/grow away debt; negative real rates; stealth taxes/regulation.,0.0392156862745098
+5,Credit Stress – Shadow/Private Credit Accident,3.0,4,Debt Overhang / Credit Stress,Liquidity mismatch in private credit/shadow leverage triggers forced selling.,0.029411764705882353
+6,AI Breakout – Productivity Boom / Concentration,5.0,3,AI Breakout / Tech Concentration,Measured productivity inflects; equity leadership narrows; capex wave.,0.049019607843137254
+7,AI Breakout – Energy/Infrastructure Bottleneck,3.0,3,AI Breakout / Tech Concentration,Grid/transformers/power pricing constrain deployment; winners shift toward energy/infrastructure.,0.029411764705882353
+8,Geopolitical Fragmentation – Trade/Tech Bifurcation,4.0,4,Geopolitical Fragmentation (Multipolar),"Export controls, tariffs, friend-shoring; supply chains regionalize; cost of capital rises.",0.0392156862745098
+9,Geopolitical Fragmentation – Cyber Systemic Event,4.0,5,Geopolitical Fragmentation (Multipolar),Payments/cloud/market plumbing disruption; risk premium spike; regulatory clampdown.,0.0392156862745098
+10,Cronyism / Policy Distortion,6.0,3,Cronyism / Policy Distortion,Policy captured; capital misallocated; productivity drag; episodic sector booms/busts.,0.058823529411764705
+11,China Hard Landing,4.0,4,China Hard Landing,Property/banking stress and weak demand transmit disinflation + commodity swings.,0.0392156862745098
+12,Taiwan Hostilities / Kinetic Shock,4.0,5,Taiwan Hostilities / Kinetic Shock,Semiconductor + shipping shock; rationing/controls; global recession risk.,0.0392156862745098
+13,Credit Accident (U.S. Regional),3.0,4,Credit Accident (U.S. Regional),Regional banking/CRE/credit event; policy backstop but equity risk-off.,0.029411764705882353
+14,Space Race / Tech-Industrial Rivalry,5.0,3,Space Race / Tech-Industrial Rivalry,Dual-use spending accelerates; industrial/defense/space capex cycle.,0.049019607843137254
+15,Pandemic / Bio Disruption,3.0,4,Pandemic / Bio Disruption,Supply/labor shock; emergency policy; sector rotation violent.,0.029411764705882353
+16,Climate Transition Stress – Policy/Stranding Shock,1.5,3,Climate Transition Stress,Rapid regulation/carbon border shifts; stranded assets; capex reallocation.,0.014705882352941176
+17,Climate Stress – Physical/Insurance Retreat,1.5,4,Climate Transition Stress,Repeated disasters → insurance withdrawal; real estate/muni repricing.,0.014705882352941176
+18,Energy Shock / Supply Constraint,6.0,5,Energy Shock / Supply Constraint,Supply disruption or underinvestment → sustained price spikes; inflation + recession risk.,0.058823529411764705
+19,Political Polarization / Governance Shock,5.0,4,Political Polarization / Governance Shock,Policy whiplash; institutional stress; unstable fiscal/regulatory regime.,0.049019607843137254
+20,Liquidity: JGB + US Fiscal Dominance,6.0,5,Liquidity: JGB + US Fiscal Dominance,Compound liquidity shock from Japan yield repricing + US term premium/auction stress.,0.058823529411764705

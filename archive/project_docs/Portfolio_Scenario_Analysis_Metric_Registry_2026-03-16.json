@@ -1,0 +1,283 @@
+{
+  "artifact_type": "portfolio_metric_registry",
+  "created_at_utc": "2026-03-16T19:48:34Z",
+  "source_session": "Portfolio Scenario Analysis",
+  "portfolio_id": "v8c-shld",
+  "source_files": [
+    {
+      "file": "KEEP_v8c_method_scenarios.xlsx",
+      "sheets_used": [
+        "Method",
+        "v8c-shld Summary"
+      ],
+      "notes": "Primary source for canon ranking method and summary metrics."
+    },
+    {
+      "file": "Portfolio Scenario Analysis.txt",
+      "notes": "Source for carried-forward realized-tape comparison and provisional scenario tally."
+    },
+    {
+      "file": "metrics_r3af.py",
+      "notes": "Source for Robust R3AF computation shape (TailAlpha + Convexity + TailOrtho)."
+    }
+  ],
+  "display_label_order": [
+    "Robust CEW (30y)",
+    "Canonical SWCAGR",
+    "Robust R3AF",
+    "Robust shortfall < 5%"
+  ],
+  "ranking_logic": {
+    "priority_1": "Maximize Robust CEW.",
+    "priority_2": "Among portfolios within 98.5% of the best Robust CEW, maximize Robust R3AF.",
+    "priority_3": "Then minimize robust downside shortfall semideviation below a 5.0% CAGR hurdle.",
+    "diagnostic_only": [
+      "Historical CAGR",
+      "Historical Sortino",
+      "Historical MaxDD"
+    ]
+  },
+  "method_notes": {
+    "robust_cew_blend": "Robust CEW log blend = 50% canonical scenario weights + 25% equal-weight scenarios + 25% stress-tilted weights.",
+    "stress_tilt": "Stress tilt uses canonical severity, downside in Evergreen benchmark scenario CAGR, and a square-root dampener on canonical weights."
+  },
+  "core_metrics": {
+    "robust_cew_30y": {
+      "display_label": "Robust CEW (30y)",
+      "sheet_label": "Robust CEW (30y)",
+      "raw_value": 11.46993022986616,
+      "display_value": "11.47x",
+      "unit": "multiple",
+      "sheet_source": {
+        "file": "KEEP_v8c_method_scenarios.xlsx",
+        "sheet": "v8c-shld Summary",
+        "value_cell": "B3"
+      },
+      "method_source": {
+        "file": "KEEP_v8c_method_scenarios.xlsx",
+        "sheet": "Method",
+        "text_cell": "A21"
+      },
+      "definition": "Primary metric: robust 30-year certainty-equivalent terminal wealth."
+    },
+    "canonical_swcagr": {
+      "display_label": "Canonical SWCAGR",
+      "sheet_label": "Canonical SWCAGR (%)",
+      "raw_value": 0.08901683823529412,
+      "display_value": "8.901684%",
+      "unit": "percent",
+      "sheet_source": {
+        "file": "KEEP_v8c_method_scenarios.xlsx",
+        "sheet": "v8c-shld Summary",
+        "value_cell": "B8"
+      },
+      "method_source": {
+        "file": "KEEP_v8c_method_scenarios.xlsx",
+        "sheet": "Method",
+        "text_cell": "A23"
+      },
+      "definition": "Scenario-weighted CAGR under canonical scenario weights."
+    },
+    "robust_r3af": {
+      "display_label": "Robust R3AF",
+      "sheet_label": "Robust R3AF",
+      "raw_value": 0.1104364933538062,
+      "display_value": "0.110436",
+      "unit": "score",
+      "sheet_source": {
+        "file": "KEEP_v8c_method_scenarios.xlsx",
+        "sheet": "v8c-shld Summary",
+        "value_cell": "B9"
+      },
+      "method_source": {
+        "file": "KEEP_v8c_method_scenarios.xlsx",
+        "sheet": "Method",
+        "text_cell": "A24"
+      },
+      "definition": "Scenario-based antifragility score used in the canon method. Distinct from the separate project R3 metric.",
+      "computation_note": "metrics_r3af.py computes R3AF as 0.55*TailAlpha + 0.25*Convexity + 0.20*TailOrtho."
+    },
+    "robust_shortfall_lt5_cagr": {
+      "display_label": "Robust shortfall < 5%",
+      "sheet_label": "Robust Shortfall <5% CAGR",
+      "raw_value": 0.002816200472784419,
+      "display_value": "0.281620%",
+      "unit": "percent",
+      "sheet_source": {
+        "file": "KEEP_v8c_method_scenarios.xlsx",
+        "sheet": "v8c-shld Summary",
+        "value_cell": "B10"
+      },
+      "method_source": {
+        "file": "KEEP_v8c_method_scenarios.xlsx",
+        "sheet": "Method",
+        "text_cell": "A25"
+      },
+      "definition": "Robust downside shortfall semideviation below a 5.0% CAGR hurdle."
+    }
+  },
+  "supporting_metrics": {
+    "canon_rank": {
+      "display_label": "Canon Rank",
+      "raw_value": 1.0,
+      "display_value": "1.000000",
+      "unit": "ordinal",
+      "sheet_source": {
+        "file": "KEEP_v8c_method_scenarios.xlsx",
+        "sheet": "v8c-shld Summary",
+        "value_cell": "B2"
+      }
+    },
+    "cew_canonical_30y": {
+      "display_label": "CEW Canonical (30y)",
+      "raw_value": 12.84355804299403,
+      "display_value": "12.84x",
+      "unit": "multiple",
+      "sheet_source": {
+        "file": "KEEP_v8c_method_scenarios.xlsx",
+        "sheet": "v8c-shld Summary",
+        "value_cell": "B4"
+      }
+    },
+    "cew_equal_30y": {
+      "display_label": "CEW Equal (30y)",
+      "raw_value": 10.9302564411869,
+      "display_value": "10.93x",
+      "unit": "multiple",
+      "sheet_source": {
+        "file": "KEEP_v8c_method_scenarios.xlsx",
+        "sheet": "v8c-shld Summary",
+        "value_cell": "B5"
+      }
+    },
+    "cew_stress_30y": {
+      "display_label": "CEW Stress (30y)",
+      "raw_value": 9.599354887894101,
+      "display_value": "9.60x",
+      "unit": "multiple",
+      "sheet_source": {
+        "file": "KEEP_v8c_method_scenarios.xlsx",
+        "sheet": "v8c-shld Summary",
+        "value_cell": "B6"
+      }
+    },
+    "cew_floor_30y": {
+      "display_label": "CEW Floor (30y)",
+      "raw_value": 9.599354887894101,
+      "display_value": "9.60x",
+      "unit": "multiple",
+      "sheet_source": {
+        "file": "KEEP_v8c_method_scenarios.xlsx",
+        "sheet": "v8c-shld Summary",
+        "value_cell": "B7"
+      }
+    },
+    "worst_scenario_cagr": {
+      "display_label": "Worst Scenario CAGR (%)",
+      "raw_value": 0.03797499999999999,
+      "display_value": "3.797500%",
+      "unit": "percent",
+      "sheet_source": {
+        "file": "KEEP_v8c_method_scenarios.xlsx",
+        "sheet": "v8c-shld Summary",
+        "value_cell": "B11"
+      }
+    },
+    "worst_decile_scenario_cagr": {
+      "display_label": "Worst Decile Scenario CAGR (%)",
+      "raw_value": 0.04303999999999999,
+      "display_value": "4.304000%",
+      "unit": "percent",
+      "sheet_source": {
+        "file": "KEEP_v8c_method_scenarios.xlsx",
+        "sheet": "v8c-shld Summary",
+        "value_cell": "B12"
+      }
+    },
+    "best_scenario_cagr": {
+      "display_label": "Best Scenario CAGR (%)",
+      "raw_value": 0.111975,
+      "display_value": "11.197500%",
+      "unit": "percent",
+      "sheet_source": {
+        "file": "KEEP_v8c_method_scenarios.xlsx",
+        "sheet": "v8c-shld Summary",
+        "value_cell": "B13"
+      }
+    },
+    "historical_cagr": {
+      "display_label": "Historical CAGR (%)",
+      "raw_value": 0.3949655207545597,
+      "display_value": "39.496552%",
+      "unit": "percent",
+      "sheet_source": {
+        "file": "KEEP_v8c_method_scenarios.xlsx",
+        "sheet": "v8c-shld Summary",
+        "value_cell": "B14"
+      }
+    },
+    "historical_sortino": {
+      "display_label": "Historical Sortino",
+      "raw_value": 2.846578890764424,
+      "display_value": "2.846579",
+      "unit": "ratio",
+      "sheet_source": {
+        "file": "KEEP_v8c_method_scenarios.xlsx",
+        "sheet": "v8c-shld Summary",
+        "value_cell": "B15"
+      }
+    },
+    "historical_maxdd": {
+      "display_label": "Historical MaxDD (%)",
+      "raw_value": -0.1498786378254691,
+      "display_value": "-14.987864%",
+      "unit": "percent",
+      "sheet_source": {
+        "file": "KEEP_v8c_method_scenarios.xlsx",
+        "sheet": "v8c-shld Summary",
+        "value_cell": "B16"
+      }
+    }
+  },
+  "session_carryforward": {
+    "realized_tape_window": "2024-01-24 to 2026-03-11",
+    "realized_tape_proxy": "Local yfinance bundle; net total-return proxy; monthly rebalancing.",
+    "realized_tape_left_vs_right": {
+      "left": {
+        "cagr": 0.311,
+        "sortino": 2.18,
+        "max_drawdown": -0.174,
+        "calmar": 1.79,
+        "upside_capture_vs_vti": 1.24,
+        "downside_capture_vs_vti": 0.47
+      },
+      "right": {
+        "cagr": 0.234,
+        "sortino": 1.81,
+        "max_drawdown": -0.222,
+        "calmar": 1.06,
+        "upside_capture_vs_vti": 1.18,
+        "downside_capture_vs_vti": 0.97
+      }
+    },
+    "provisional_30y_scenario_tally": {
+      "right": 177,
+      "left": 171,
+      "summary": "Provisional 30-year scenario deck favored Right by a narrow margin."
+    }
+  },
+  "notes": [
+    "Robust Shortfall <5% CAGR is stored as a decimal fraction in the workbook and displayed as a percent.",
+    "Robust R3AF is scenario-based and should not be replaced with short-window realized performance.",
+    "This file is intended to be machine-readable and easy to merge into later portfolio evaluation workflows."
+  ],
+  "method_text_excerpts": {
+    "primary_metric": "Primary metric: Robust 30-year certainty-equivalent terminal wealth (Robust CEW).",
+    "cew_blend": "Robust CEW log blend = 50% canonical scenario weights + 25% equal-weight scenarios + 25% stress-tilted weights.",
+    "stress_tilt": "Stress tilt uses canonical severity, downside in Evergreen benchmark scenario CAGR, and a square-root dampener on canonical weights.",
+    "priority_1": "1) Maximize Robust CEW.",
+    "priority_2": "2) Among portfolios within 98.5% of the best Robust CEW, maximize Robust R3AF.",
+    "priority_3": "3) Then minimize robust downside shortfall semideviation below a 5.0% CAGR hurdle.",
+    "diagnostic_only": "Historical CAGR, Sortino, and MaxDD are diagnostics only, not primary optimization targets."
+  }
+}

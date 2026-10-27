@@ -1,0 +1,28 @@
+Ticker,Action,Method,PriceFit,ProxyBase,WeightedMeanCAGR_pct,WorstCAGR_pct,Note
+JQUA,added_fit,fitted_2026Q2_source_update,n=91; r2=0.945; shrink=0.603,,5.555192635693785,-0.24635266932026723,Avantis/quality sleeve; QUAL-style scenario deltas.
+SMH,added_fit,fitted_2026Q2_source_update,n=300; r2=0.682; shrink=0.833,,8.257342402320404,-10.51419050818281,Semiconductor sleeve; SOXX-style scenario deltas.
+AVUS,added_fit,fitted_2026Q2_source_update,n=69; r2=0.995; shrink=0.535,,4.637714767125285,-1.1865528815024717,Broad US Avantis core; factor-only zero discretionary deltas.
+HACK,added_fit,fitted_2026Q2_source_update,n=127; r2=0.689; shrink=0.679,,6.163834327538662,-0.5245292072649472,Cybersecurity; IHAK-style scenario deltas.
+ITA,added_fit,fitted_2026Q2_source_update,n=229; r2=0.703; shrink=0.792,,8.793239640081435,1.9137608183552017,Aerospace/defense ETF; XAR/ROKT blended defense deltas.
+PPA,added_fit,fitted_2026Q2_source_update,n=236; r2=0.742; shrink=0.797,,8.777892678987655,1.8891039030400427,Aerospace/defense ETF; XAR/ROKT blended defense deltas.
+IXUS,added_fit,fitted_2026Q2_source_update,n=152; r2=0.730; shrink=0.717,,1.9483886017153533,-3.013292422398197,Broad ex-US equity; AVDE-style developed-intl deltas.
+MSCI,added_fit,fitted_2026Q2_source_update,n=120; r2=0.528; shrink=0.667,,12.975973768381483,4.632477649318476,Index/data tollbooth; 120m single-stock fit; scaled SPGI-style deltas.
+NDAQ,added_fit,fitted_2026Q2_source_update,n=120; r2=0.464; shrink=0.667,,10.381481719797584,3.8860373586454453,Exchange/data; 120m single-stock fit; ICE-style exchange deltas.
+NOC,added_fit,fitted_2026Q2_source_update,n=120; r2=0.244; shrink=0.667,,9.075551630392464,4.724689715979657,Prime defense contractor; 120m fit; defense deltas.
+LMT,added_fit,fitted_2026Q2_source_update,n=120; r2=0.295; shrink=0.667,,7.499179326567874,3.5800762258077046,Prime defense contractor; 120m fit; defense deltas.
+GD,added_fit,fitted_2026Q2_source_update,n=120; r2=0.388; shrink=0.667,,6.230680851186398,1.8129532524375662,Prime defense contractor; 120m fit; defense deltas.
+RTX,added_fit,fitted_2026Q2_source_update,n=120; r2=0.454; shrink=0.667,,6.644744783797665,2.18432731055661,Defense/aerospace contractor; 120m fit; defense deltas.
+IEF,added_fit,fitted_2026Q2_source_update,n=275; r2=0.070; shrink=0.821,,4.8342182454115115,3.8503736577490226,Treasury duration ballast; factor fit plus disclosed bond-stress deltas.
+URNM,added_fit,fitted_2026Q2_source_update,n=66; r2=0.287; shrink=0.524,,17.573462418040094,11.454490137471312,Uranium/nuclear miner sleeve; NUKZ/NLR blended deltas.
+CEG,added_fit,fitted_2026Q2_source_update,n=41; r2=0.355; shrink=0.406,,25.187982594462323,17.34719938752503,Nuclear/power single name; available-history fit; nuclear/power deltas.
+XLV,added_fit,fitted_2026Q2_source_update,n=318; r2=0.605; shrink=0.841,,6.059284924942838,0.22922444483693183,Healthcare sector benchmark; factor-only zero discretionary deltas.
+EUAD,added_proxy,proxy_2026Q2_source_update,proxy blend,0.6*XAR;0.4*ROKT,8.203490196078432,1.4119999999999995,EUAD had too little usable local history in bundle; Europe aerospace/defense represented by XAR/ROKT blended defense proxy.
+VOO,added_proxy,proxy_2026Q2_source_update,proxy blend,1*IVV,4.987156862745098,-1.21,VOO treated as IVV/S&P 500 benchmark equivalent; use actual VOO price later if desired.
+GLD,added_proxy,proxy_2026Q2_source_update,proxy blend,1*GLDM,9.561617647058824,7.89,GLD treated as GLDM scenario-equivalent; apply higher ER separately in portfolio engine.
+IEF/aggregate-bond proxy,added_proxy,proxy_2026Q2_source_update,proxy blend,1*IEF,4.8342182454115115,3.8503736577490226,Exact alias for weights_matrix_all_ports legacy label.
+VTI,added_proxy,proxy_2026Q2_source_update,proxy blend,0.8*IVV;0.2*AVUS,4.917268443621136,-1.2053105763004943,Broad US market proxy: 80% IVV + 20% AVUS.
+VTSAX,added_proxy,proxy_2026Q2_source_update,proxy blend,1*VTI,4.917268443621136,-1.2053105763004943,VTSAX treated as VTI total-US proxy.
+VT,added_proxy,proxy_2026Q2_source_update,proxy blend,0.55*VTI;0.45*IXUS,3.5812725147635343,-2.0189024070444606,Global equity proxy: 55% US total market + 45% ex-US.
+PSCI,added_proxy,proxy_2026Q2_source_update,proxy blend,0.5*AIRR;0.3*XAR;0.2*PAVE,8.295980392156864,0.2569999999999998,Small-cap industrial proxy: AIRR/XAR/PAVE blend; no local PSCI price in bundle.
+IBKR,added_proxy,proxy_2026Q2_source_update,proxy blend,0.5*NDAQ;0.3*CBOE;0.2*ICE,9.747662428526244,4.529018679322722,"Brokerage/market-structure proxy; no local IBKR price in bundle, so use exchange/data blend."
+ZTS_proxy,added_proxy,proxy_2026Q2_source_update,proxy blend,0.6*XLV;0.4*JQUA,5.857648009243216,0.03899359917405221,"ZTS rough animal-health quality/healthcare proxy; label kept explicit, not a true ticker row."
