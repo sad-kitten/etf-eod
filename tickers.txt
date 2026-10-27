@@ -258,3 +258,9 @@ EWS  # VS 2026-10-19 Singapore
 UTHR  # 2026-10-25 Addendum 56 single-name exception (owner-approved)
 VRTX  # 2026-10-25 Addendum 56 watch list
 ZTS  # 2026-10-26 Addendum 57 single-name (owner-approved position; watch list)
+EWM  # VS 2026-10-27 Malaysia
+THD  # VS 2026-10-27 Thailand
+EPU  # VS 2026-10-27 Peru
+EWN  # VS 2026-10-27 Netherlands
+VNM  # VS 2026-10-27 Vietnam
+IHE  # VS 2026-10-27 US pharmaceuticals
