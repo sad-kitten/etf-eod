@@ -1,0 +1,21 @@
+scenario_id,scenario_name,weight_percent,definition
+1,Managed reindustrialization / broad earnings grind,7.77,"Base-case industrial rebuilding, reshoring, infrastructure and defense-adjacent capex with broad but not explosive earnings growth."
+2,AI compute boom / profitable capex monetization,7.77,"AI infrastructure capex converts into durable profits, high utilization, strong platform demand, and continued compute investment."
+3,AI power bottleneck / grid+nuclear buildout,7.77,"Electricity demand from AI, electrification, and industry stresses grid capacity and raises value of grid, nuclear, power, and bottleneck infrastructure."
+4,AI capex disappointment / productivity lag,4.85,Heavy AI spending fails to generate expected productivity or margins; long-duration tech and speculative AI beneficiaries reprice lower.
+5,"AI platform concentration / right thesis, wrong vehicle",6.8,AI economics accrue mainly to dominant platforms/hyperscalers while many secondary AI/theme vehicles disappoint.
+6,Space-defense / autonomy / advanced weapons race,4.85,"Defense, space, autonomy, drones, sensors, satellite systems, and advanced weapons demand compound under strategic competition."
+7,Kinetic Taiwan / semiconductor disruption shock,2.91,"A Taiwan or nearby kinetic shock disrupts semiconductor supply chains, raises defense urgency, and stresses broad risk assets."
+8,"Defense demand up, margins/procurement squeezed",3.88,"Defense demand rises but procurement politics, cost inflation, margin pressure, and execution friction limit contractor upside."
+9,Cyber systemic event / AI-enabled attacks,6.8,"AI-enabled attacks, ransomware, infrastructure disruption, or systemic cyber events raise security spend and volatility."
+10,Post-quantum cryptography migration / security boom,4.85,"Quantum-readiness and cryptography migration become urgent, lifting security, compliance, and resilient infrastructure spending."
+11,Quantum commercialization breakthrough,0.97,Quantum computing or adjacent commercialization arrives earlier than expected and benefits quantum and enabling-technology exposures.
+12,Quantum delay / thematic disappointment,1.94,Quantum timelines stretch; speculative quantum/thematic exposures disappoint while quality and diversified sleeves hold up better.
+13,Fiscal dominance / sticky inflation / stagflation,7.77,"Debt, deficits, political constraints, and inflation persistence pressure real returns; hard assets, trend, and tollbooth exposures matter."
+14,Credit accident / liquidity stress,5.83,"Private credit, banking, funding, or liquidity stress hits risk assets and raises volatility, hedging demand, and recovery-burden risk."
+15,Managed-volatility suppression / policy whipsaw,3.88,"Policy suppresses or repeatedly distorts volatility, causing whipsaw conditions and uneven results for trend and hedge sleeves."
+16,Geopolitical fragmentation / supply-chain blocs,4.85,"Trade blocs, sanctions, supply-chain duplication, and friend-shoring raise friction while supporting security and industrial resilience."
+17,China hard landing,2.91,"China property/debt/demographic/consumption weakness spills into commodities, industrial demand, supply chains, and global risk appetite."
+18,Energy shock / supply constraint,3.88,"Energy supply shortages, geopolitical disruptions, or underinvestment produce price shocks and inflation pressure."
+19,Grid buildout delay / permitting/local opposition,3.88,"Needed grid/power/infrastructure buildout is slowed by permitting, NIMBY, cost overruns, local opposition, or policy dysfunction."
+20,Broad beta / mega-cap platform melt-up,5.83,"Broad markets, especially mega-cap platforms, continue to compound or melt up despite valuation concerns."
