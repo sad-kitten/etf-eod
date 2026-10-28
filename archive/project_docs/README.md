@@ -149,3 +149,53 @@ Files (original project path; `gen matrix.py` is stored as `gen_matrix_space.py`
 - Betas_Shrunk_FULL_2026Q2_SOURCE_UPDATE.csv
 - Portfolio_Coverage_Audit_2026Q2_SOURCE_UPDATE.csv
 - Portfolio_Scenario_Analysis_Metric_Registry_2026-03-16.json
+
+## Batch 2 (2026-10-28)
+
+Removed from the 'investing' project: superseded code (engine lives in engine/), engine data already in engine/data, older T50 reports (A57 and R56 kept in the project), early experiment tables, superseded notes, and supporting data tables behind addenda 39–57 (conclusions remain in the addenda).
+
+- claude/A57_Code_20261026.py
+- claude/R55_Code_20261024.py
+- claude/Singles_Code_20261024.py
+- claude/StackedETF_Code_20261024.py
+- claude/SevereState_Code_20261005.py
+- claude/Compact_K7_Code_20260923.py
+- claude/ER_R8.json
+- claude/FactorLoadings_20261025.csv
+- claude/Report_T50_R8k_20260922.csv
+- claude/Report_T50_R8l_PREF_20261006.csv
+- claude/Report_T50_R8m_HappySurprise_20261006.csv
+- claude/Report_T50_GARP_20261007.csv
+- claude/Report_T50_STK_20261024.csv
+- claude/Report_T50_R8n_20261024.csv
+- claude/Report_T50_R55_20261024.csv
+- claude/Report_2FFL_vs_C5smh3_20260919.csv
+- claude/Report_K7_ALL_20260923.csv
+- claude/IndexedDraw_20260903.csv
+- claude/Regime_Metrics_20260903.csv
+- claude/SurpriseAdj_Flex_20260903.csv
+- claude/FlexDraw_R3dK_20260903.csv
+- claude/FlexDraw_Experiment_20260901.csv
+- claude/Row_Audit_R8_20260903.csv
+- claude/Row_Audit_Universe_20260901.csv
+- claude/Policy_Basis_20260903.csv
+- claude/Policy_Accounts_20260904.csv
+- claude/EngineV2_Decision_Default_C5_bal_20260910.md
+- claude/Compliant_Frontier_Note_20260831.md
+- claude/ScenarioSet_Review_R6_Agenda_20260831.md
+- claude/EngineV2_ExtUniverse_Opt_20260830.md
+- claude/EngineV2_Digest_Survivors_20260909.md
+- claude/GitHub_Handoff_20261004.md
+- claude/Cov_Regime_C5rows_20261005.csv
+- claude/Regime_Conditional_Stats_20261005.csv
+- claude/SevereState_Sensitivity_20261005.csv
+- claude/Gold_Rolling_Windows_20261005.csv
+- claude/LookThrough_Audit_20261005.csv
+- claude/LookThrough_Summary_20261005.csv
+- claude/Protection_Tiers_20260930.csv
+- claude/Distributions_20261024.csv
+- claude/Shortlist_PriceMetrics_20261004.csv
+- claude/Multibagger_Candidates_20261004.csv
+- claude/GARP_ETFs_20261007.csv
+- claude/GARP_Fundamentals_20261007.csv
+- claude/Screen_A57_lite_20261026.csv

@@ -1,0 +1,92 @@
+group,ticker,name,page_date,ccy,price,mktcap_local_B,mktcap_usd_B,pe_ttm,pe_fwd,p_fcf,fcf_yield_pct,net_cash_local_M,debt_to_ebitda,roic_pct,shares_yoy_pct,insider_pct,adv_usd_M,chg_52w_pct,growth_latest,hurdle_eps_cagr_pct_10x_15y_on_fwd_pe,hurdle_pct_on_p_fcf,mktcap_usd_B_at_10x,tier,notes
+US owner-operated / quality,MEDP,Medpace,Oct 2,USD,599.47,16.73,16.73,35.14,32.75,23.68,4.22,358.58,,573.33,-7.24,18.75,149.7,10.22,"TTM rev +24.7%; Q2 +17.2%, EPS +37%; FY26 guide rev +11-14%",20.5,17.9,167.0,B,hurdle >16%; founder-CEO; buybacks
+US owner-operated / quality,KNSL,Kinsale Capital,Oct 2,USD,329.72,7.51,7.51,13.38,15.55,7.5,13.32,-14.02,0.31,25.98,-1.06,5.46,69.8,-21.02,"Q2 gross premium -5.0% (property -32.7%, rest +3.7%); op EPS +15.9%; combined ratio 75.5%; op ROE 24.4%",14.7,9.2,75.0,B,insurer: FCF yield not comparable; growth stalled in soft E&S market; founder-CEO
+US owner-operated / quality,IESC,IES Holdings,Sep 30,USD,321.08,12.79,12.79,28.53,25.52,56.12,1.78,310.92,0.13,41.01,-0.13,1.6,83.8,64.28,not pulled,18.5,24.9,128.0,X,FCF yield <2.5%; insider % per aggregator excludes controlling holder
+US owner-operated / quality,APPF,AppFolio,Oct 2,USD,202.97,7.19,7.19,46.26,26.3,26.62,3.76,185.91,0.18,43.49,-1.92,26.49,57.0,-20.88,"Q2 rev +19%, units +8%; FY26 guide +17.5-18.5%",18.7,18.8,72.0,B,hurdle >16%; dual-class founder control
+US owner-operated / quality,DOCS,Doximity,Oct 2,USD,27.93,4.98,4.98,33.15,19.58,16.25,6.15,678.12,0.05,65.72,-2.55,28.87,81.0,-60.46,"TTM rev +11.2%; FY27 guide about +4%, EBITDA margin 55% -> ~49%",16.4,15.0,50.0,C,growth stalled; AI competitor (OpenEvidence); founder dual-class
+US owner-operated / quality,DUOL,Duolingo,Oct 2,USD,144.27,6.75,6.75,17.2,54.83,16.55,6.04,1230.0,0.45,78.85,2.6,14.5,158.7,-52.5,"Q2 DAUs +23%, bookings +8%, rev +18%; FY26 guide rev +16.3%, bookings +10.9%; SBC ~15% of revenue",24.7,15.1,68.0,C,"fails dilution gate (+2.6%/yr, SBC ~15% of rev); AI substitution risk; founder dual-class"
+US owner-operated / quality,CRVL,CorVel,Oct 2,USD,75.47,3.81,3.81,33.22,,33.52,2.98,227.49,0.15,62.23,-1.17,2.24,16.7,2.43,not pulled,20.6,20.7,38.0,X,P/E 33 with no forward estimate; hurdle >21%
+US owner-operated / quality,XPEL,XPEL,Sep 27,USD,43.48,1.2,1.2,21.96,17.87,,-0.24,-22.88,0.66,18.07,0.05,9.44,8.3,33.87,not pulled,15.7,,12.0,X,TTM FCF negative
+US owner-operated / quality,PLMR,Palomar,Oct 2,USD,126.49,3.33,3.33,16.99,11.6,8.03,12.46,-233.08,1.02,16.55,0.27,2.63,30.5,15.1,not pulled,12.4,9.7,33.0,B,insurer; insiders 2.6%
+US owner-operated / quality,TPL,Texas Pacific Land,Oct 2,USD,340.19,23.46,23.46,43.39,33.71,44.55,2.24,230.6,0.02,38.54,-0.03,0.36,133.4,6.53,not pulled,20.7,23.0,235.0,X,"FCF yield <2.5%, hurdle ~21%"
+US owner-operated / quality,NVR,NVR,Oct 2,USD,5993.85,15.97,15.97,15.48,15.81,15.26,6.55,3.48,0.68,36.74,-7.92,1.14,243.1,-25.42,not pulled,14.8,14.5,160.0,B,no owner-operator; buyback compounder; housing cycle at 5%+ long rates
+US owner-operated / quality,CPRT,Copart,Oct 2,USD,27.22,25.21,25.21,17.56,16.79,19.9,5.03,4400.0,0.05,28.38,-2.12,8.6,285.9,-39.63,"FY26 rev +0.4%, EPS -2.5%; US insurance units -7.5% (one lost customer); no debt; buying ACV for cash",15.2,16.6,252.0,C,growth stalled
+US owner-operated / quality,IBKR,Interactive Brokers,Oct 2,USD,88.3,40.01,40.01,35.06,29.94,,,,,,2.0,2.83,334.3,28.38,not pulled,19.8,,400.0,X,cap shown is Class A only (group is ~4x larger); hurdle >16%
+US owner-operated / quality,FIX,Comfort Systems,Oct 2,USD,1728.01,60.72,60.72,42.52,32.48,28.11,3.56,1540.0,0.16,76.72,-0.86,1.06,527.2,107.11,not pulled,20.4,19.3,607.0,X,cap $61B after +107%; hurdle >20%
+US owner-operated / quality,PAYC,Paycom,Oct 2,USD,220.99,9.79,9.79,23.64,16.82,17.02,5.88,-784.8,1.29,33.29,-7.13,15.04,161.5,10.92,not pulled,15.3,15.3,98.0,B,growth high-single-digit; buybacks now debt-funded
+US owner-operated / quality,VEEV,Veeva,Oct 2,USD,273.33,44.25,44.25,44.81,28.31,27.0,3.7,7090.0,0.14,363.83,-0.14,8.31,409.4,-6.8,not pulled,19.3,18.9,442.0,X,cap $44B; hurdle ~19%
+US owner-operated / quality,TTD,The Trade Desk,Oct 2,USD,11.95,5.65,5.65,14.06,12.97,6.55,15.28,1050.0,0.54,24.83,-4.27,11.05,311.3,-75.77,"Q2 rev +3%, below guidance; Q3 guide $650M (below prior-year quarter); Amazon price competition",13.3,8.2,56.0,X,revenue now shrinking: trailing FCF yield overstates
+US owner-operated / quality,LULU,Lululemon,Oct 2,USD,94.46,10.46,10.46,7.73,11.33,7.72,12.95,-751.39,0.71,23.7,-4.31,8.03,697.2,-46.8,forward EPS below trailing,12.3,9.4,105.0,C,earnings falling; brand cycle
+US owner-operated / quality,DECK,Deckers,Oct 2,USD,79.12,10.77,10.77,11.15,10.38,9.64,10.37,1130.0,0.32,90.59,-5.72,1.02,266.7,-21.8,FY26 rev +9.8%; TTM +7.9%,11.6,11.1,108.0,B,no owner-operator; brand cycle; growth <10%
+US owner-operated / quality,HEI,HEICO,Oct 2,USD,302.45,42.27,42.27,50.41,43.92,41.03,2.44,-2300.0,1.68,13.06,0.33,11.12,144.1,-5.43,not pulled,22.9,22.3,423.0,X,hurdle ~23%; ROIC 13%; debt 1.7x
+US owner-operated / quality,KRYS,Krystal Biotech,Oct 2,USD,322.28,9.54,9.54,40.46,38.95,37.0,2.7,1090.0,0.04,40.16,1.46,9.94,93.5,79.43,not pulled,21.9,21.5,95.0,X,hurdle ~22%; single-product biotech
+US owner-operated / quality,GRBK,Green Brick Partners,Oct 2,USD,66.66,2.87,2.87,10.04,11.28,25.69,3.89,-160.22,0.77,13.42,-1.83,8.4,24.8,-12.59,not pulled,12.2,18.6,29.0,X,ROIC <15%
+US owner-operated / quality,ESQ,Esquire Financial,Sep 24,USD,123.18,1.45,1.45,20.39,15.84,21.87,4.57,240.01,,,1.31,11.46,26.8,17.45,not pulled,14.8,17.3,14.0,B,bank (ROE 18.3%); small
+US owner-operated / quality,LMAT,LeMaitre Vascular,Sep 27,USD,81.52,1.86,1.86,28.53,26.67,25.25,3.96,185.99,2.15,24.25,3.65,6.84,20.9,-7.15,not pulled,18.9,18.4,19.0,X,share count +3.7%; hurdle ~19%
+US owner-operated / quality,MPWR,Monolithic Power,Oct 2,USD,1439.73,70.75,70.75,87.83,44.94,120.83,0.83,1390.0,0.02,31.71,1.15,3.47,1061.3,57.2,not pulled,23.1,31.4,708.0,X,hurdle ~23%; cap $71B
+US owner-operated / quality,NVMI,Nova,Oct 2,USD,396.12,12.59,12.59,49.26,31.83,66.35,1.51,902.97,2.64,19.75,6.16,0.25,217.2,19.56,not pulled,20.3,26.3,126.0,X,share count +6.2%; FCF yield 1.5%
+US owner-operated / quality,FICO,Fair Isaac,Oct 2,USD,661.25,14.28,14.28,19.18,13.3,14.34,6.97,-5350.0,4.39,65.03,-4.5,3.14,640.5,-56.29,not pulled,13.5,14.0,143.0,X,debt 4.4x EBITDA
+US owner-operated / quality,AXON,Axon,Oct 2,USD,413.35,33.58,33.58,171.91,46.14,252.11,0.4,-1160.0,9.81,1.18,2.43,4.73,434.8,-41.89,not pulled,23.3,38.1,336.0,X,hurdle ~23%; ROIC ~1%; SBC dilution
+US owner-operated / quality,POWL,Powell Industries,Oct 2,USD,196.1,7.14,7.14,37.54,30.38,29.29,3.41,631.04,0.01,121.54,0.06,2.48,102.8,85.46,not pulled,19.9,19.6,71.0,X,hurdle ~20%; cyclical peak after +85%
+US owner-operated / quality,DAVE,Dave,Oct 2,USD,349.11,4.45,4.45,22.34,19.28,13.27,7.54,-14.4,1.15,90.14,-0.57,19.65,104.8,78.82,Q2 rev +30%; FY26 guide +31-33%; DOJ lawsuit open; $193M convertible,16.3,13.4,44.0,B,"lottery flags: beta 3.8, short interest 24% of float; subprime credit; litigation"
+US owner-operated / quality,SEZL,Sezzle,Oct 2,USD,107.41,3.62,3.62,23.62,17.92,13.17,7.59,-42.36,0.39,101.9,-0.85,44.47,52.5,36.26,TTM rev +43%,15.7,13.4,36.0,B,"lottery flags: beta 6.7, short interest 25% of float; consumer credit"
+US owner-operated / quality,ONON,On Holding,Oct 2,USD,30.85,10.31,10.31,21.06,16.79,19.5,5.13,837.75,0.97,32.3,0.95,25.53,369.9,-24.68,3y rev CAGR 35%; TTM +18.5%; 2026 guide >= +23% constant currency,15.2,16.4,103.0,A,co-founders back as co-CEOs after two CEO exits in ~12 months; dual-class; fashion/brand cycle
+US owner-operated / quality,PAY,Paymentus,Sep 28,USD,29.9,3.77,3.77,45.31,30.45,23.59,4.24,367.3,0.09,30.89,0.38,36.24,34.4,-4.48,"Q2 rev +28.8%, adj. EBITDA +54%; FY26 guide about +21%; no debt",19.9,17.9,38.0,B,hurdle 18-20%; founder-CEO + PE sponsor control (dual-class); thin margins
+Serial acquirers / international,CSU,Constellation Software (TSX),Oct 2,CAD,2981.21,63.18,44.55,46.31,16.12,16.07,6.22,-4170.0,2.38,19.58,,4.36,128.6,-22.21,"Q2 rev +17%, organic +3%",14.9,14.9,446.0,B,cap US$45B; gross debt 2.4x EBITDA; founder stepped back as president in 2025; AI-disruption debate
+Serial acquirers / international,TOI,Topicus.com (TSX-V),Oct 2,CAD,89.88,7.51,5.3,130.95,19.76,11.16,8.96,-386.34,1.56,14.62,,1.52,6.0,-41.17,"Q2 rev +18%, organic +4%",16.5,12.1,53.0,B,controlled by Constellation + founders; FCF yield per aggregator overstates owner cash flow; thin trading
+Serial acquirers / international,LMN,Lumine Group (TSX-V),Sep 8,CAD,22.28,5.63,3.97,37.22,15.01,19.64,5.09,-110.78,1.93,13.3,-0.09,0.84,1.9,-54.72,not pulled,14.4,16.5,40.0,B,stale page; ROIC 13%; controlled by Constellation
+Serial acquirers / international,KSPI,Kaspi.kz (ADS),Oct 2,USD,94.05,17.87,17.87,8.17,6.79,8.35,11.97,854.29,0.24,81.96,0.08,45.13,58.3,18.15,Q2 net profit +0.1%; 2026 adj. EBITDA guide about +5%; Turkey unit loss-making; dividend ~8%,8.5,10.0,179.0,B,profit flat; Kazakhstan/Turkey sovereign and regulatory risk; founders ~45%; at a 10x exit multiple the growth needed is ~14-15%
+Serial acquirers / international,NU,Nu Holdings,Oct 2,USD,13.43,64.88,64.88,18.3,13.78,,,,,,0.26,22.8,1021.8,-11.59,"Q2 rev +39% FX-neutral, net income +49%, ROE 33%; 139M customers; 90+ day NPL 6.9% (6.5% a year earlier)",13.7,,649.0,A,bank (deposit-funded leverage); cap $65B so 10x = $650B; Brazil credit/FX; founder dual-class control
+Serial acquirers / international,MELI,MercadoLibre,Oct 2,USD,1696.56,86.01,86.01,46.17,40.28,6.93,,-7460.0,2.97,14.2,,0.22,1101.7,-22.07,not pulled,22.2,8.6,860.0,X,hurdle ~22%; cap $86B; debt ~3x
+Serial acquirers / international,DNP,Dino Polska (WSE),Sep 29,PLN,35.08,33.91,8.81,21.62,18.86,50.68,1.97,-81.05,0.33,17.85,-0.38,51.24,40.2,-19.1,not pulled,16.1,24.0,88.0,B,FCF yield <2.5% (reinvesting); founder 51%
+Serial acquirers / international,EVO,Evolution (STO),Sep 22,SEK,867.0,165.13,16.55,14.73,13.21,12.07,8.29,11770.0,0.07,31.19,-3.24,34.37,60.6,5.19,Q2 rev -1.2% (+2.4% constant currency); Asia -8.9%; bought back 2.6% of shares in Q2,13.4,12.7,166.0,C,growth stalled; gambling regulation; UK settlement closed
+Serial acquirers / international,GAW,Games Workshop (LSE),Sep 26,GBP,175.7,5.81,7.72,28.22,28.44,24.63,4.06,126.9,0.18,98.6,0.16,0.09,16.3,19.69,not pulled,19.4,18.2,77.0,X,hurdle ~19%; no owner-operator; pays out most earnings
+Serial acquirers / international,ADYEN,Adyen (AMS),Sep 29,EUR,880.0,27.35,31.06,24.36,20.28,,,,0.3,13.38,0.52,4.49,122.3,-34.86,not pulled,16.7,,311.0,B,hurdle ~17%; ROIC 13%
+Serial acquirers / international,WISE,Wise (LSE),Oct 2,GBP,8.548,8.85,11.76,23.44,20.41,,,,0.42,31.93,-1.53,18.69,15.5,-15.11,not pulled,16.7,,118.0,B,hurdle ~17%; founder ~19%
+Serial acquirers / international,KPG,Kelly Partners (ASX),Aug 21,AUD,4.39,0.199,0.14,56.28,,5.74,17.44,-113.49,2.55,12.8,0.28,39.59,0.2,-57.3,not pulled,24.9,7.3,1.0,X,debt 2.6x; cap <US$300M
+Serial acquirers / international,TVK,TerraVest (TSX),Sep 18,CAD,118.15,2.47,1.74,27.69,23.29,22.68,4.41,-1140.0,3.68,6.03,8.23,28.17,5.0,-12.79,not pulled,17.8,17.6,17.0,X,debt 3.7x; share count +8%
+Serial acquirers / international,LIFCO.B,Lifco (STO),Sep 5,SEK,314.2,142.71,14.3,37.06,30.9,29.95,3.34,-10530.0,1.59,15.03,-0.02,50.59,9.8,-4.73,not pulled,20.0,19.8,143.0,X,hurdle ~20%
+Serial acquirers / international,TEQ,Teqnion (STO),Sep 20,SEK,185.6,3.19,0.32,31.58,,15.49,6.46,-544.5,2.57,5.98,0.0,18.88,0.2,23.73,not pulled,20.2,14.6,3.0,X,ROIC 6%; debt 2.6x
+Japan founder-led (discovery pass),4194,Visional (TSE),Sep 27,JPY,8503.0,344.27,2.19,18.94,17.62,15.47,6.46,82690.0,0.01,256.5,0.03,35.11,14.6,-24.92,FY26 rev +23.9%; 3y CAGR 20.8%,15.6,14.6,22.0,A,access/lot size/yen; founder status per aggregator
+Japan founder-led (discovery pass),3923,Rakus (TSE),Aug 16,JPY,1175.0,416.08,2.65,17.26,17.04,33.7,2.97,20490.0,,84.86,-0.64,28.74,15.0,-2.49,FY26 rev +23.3%; TTM +16.7%; 3y CAGR 30.1%,15.4,20.7,26.0,A,stale page (Aug 16); access/lot size/yen
+Japan founder-led (discovery pass),3697,SHIFT (TSE),Aug 9,JPY,,229.12,1.46,35.2,17.9,,4.98,-930.0,,26.6,-0.86,32.93,51.5,,FY25 rev +17.4%; TTM +20.3%; 3y CAGR 26.0%,15.7,,15.0,A,stale page (Aug 9); access/lot size/yen
+Japan founder-led (discovery pass),4443,Sansan (TSE),Aug 26,JPY,,263.63,1.68,39.7,28.5,,3.58,34300.0,,23.6,-0.55,39.39,15.9,,FY26 rev +24.4%; 3y CAGR 28.2%,19.4,,17.0,B,hurdle ~19%; stale page
+
+"FRONTIER / STORY STOCKS (market-notes pull, Oct 2 close)"
+ticker,name,price,mktcap_usd_B,revenue_ttm_usd_B,cap_to_sales,fcf_ttm_usd_B,shares_yoy_pct,origin,sales_multiple_needed_for_10x_at_exit_6x_sales,implied_sales_cagr_15y_pct,note
+SPCX,SpaceX,158.96,2160.0,23.04,93.8,-32.52,41.79,IPO Jun 2026 at $135,156.0,40.0,TTM net loss $8.9B; founder holds ~82% of votes (controlled company)
+PLTR,Palantir,188.75,453.58,6.16,73.6,3.36,1.79,direct listing 2020,123.0,38.0,"profitable; 74x sales, 99.5x forward earnings"
+TSLA,Tesla,370.59,1460.0,103.62,14.1,5.76,,IPO 2010,23.0,23.0,14x sales
+RKLB,Rocket Lab,73.92,44.24,0.769,57.5,-0.371,15.68,de-SPAC 2021,96.0,36.0,
+ASTS,AST SpaceMobile,58.45,22.75,0.1153,197.3,-1.64,39.67,de-SPAC 2021,329.0,47.0,debt $3.0B
+IONQ,IonQ,43.77,17.39,0.2465,70.5,-0.484,49.98,de-SPAC 2021,118.0,37.0,
+RGTI,Rigetti,15.25,5.09,0.01335,381.3,-0.0876,32.36,de-SPAC 2022,635.0,54.0,
+QBTS,D-Wave,15.77,5.87,0.01243,472.2,-0.119,40.09,de-SPAC 2022,787.0,56.0,
+OKLO,Oklo,35.87,6.67,0.00121,5512.4,-0.276,29.85,de-SPAC 2024,9187.0,84.0,pre-revenue
+SMR,NuScale,7.75,3.33,0.01069,311.5,-0.779,131.87,de-SPAC 2022,519.0,52.0,no binding power-purchase agreement
+JOBY,Joby,5.95,5.89,0.1163,50.6,-0.743,22.15,de-SPAC 2021,84.0,34.0,
+ACHR,Archer,4.895,3.77,0.0069,546.4,-0.66,48.35,de-SPAC 2021,911.0,58.0,intraday price
+CRWV,CoreWeave,89.62,49.43,7.59,6.5,-13.66,75.59,IPO Mar 2025,11.0,17.0,debt $51.6B
+NBIS,Nebius,242.81,66.55,1.36,48.9,-5.88,22.12,relisted 2024,82.0,34.0,debt $10.2B
+
+OTHER DISCOVERY-PASS NAMES (passed the 8-criterion screen on aggregator pages; not individually re-verified)
+ticker,name,page_date,mktcap_usd_B,pe_ttm,pe_fwd,fcf_yield_pct,roic_pct,rev_3y_cagr_pct,insider_pct,shares_yoy_pct,adv_usd_M,balance_sheet,hurdle_eps_cagr_pct_10x_15y,flags
+IRMD,IRADIMED (Nasdaq),Oct 3,1.09,47.7,39.2,2.3,50.4,16.3,34.85,0.41,12.3,net cash $59M,21.9,latest growth <12%; valuation marginal
+COCO,Vita Coco (Nasdaq),Oct 1,3.37,31.5,30.0,3.67,69.0,12.5,7.71,0.94,85.5,net cash $265M,19.8,3y CAGR marginal
+HPS.A,Hammond Power (TSX),Sep 22,2.14,49.4,26.8,0.13,16.8,17.2,27.08,0.16,13.7,ND/EBITDA 0.54x,18.9,FCF near zero
+ATZ,Aritzia (TSX),Aug 9,11.68,37.8,28.3,3.09,23.0,19.0,16.16,1.77,85.4,ND/EBITDA 0.74x,19.3,stale page; share count +1.8%
+TNE,Technology One (ASX),Oct 4,6.94,71.1,55.5,3.04,58.7,17.6,8.88,0.21,18.5,net cash,24.8,P/E 71
+GQG,GQG Partners (ASX),Sep 29,2.32,5.0,5.8,21.59,142.5,22.8,74.24,0.51,9.9,net cash,7.4,revenue now flat
+NWL,Netwealth (ASX),Sep 13,3.25,77.1,32.7,1.24,249.1,22.0,47.85,0.15,10.0,net cash,20.5,stale; EPS -48% in FY26
+CDA,Codan (ASX),Sep 28,6.59,54.2,43.6,2.54,29.2,24.2,35.68,0.21,42.5,ND/EBITDA 0.03x,22.8,valuation marginal
+SQN,Swissquote (SIX),Sep 29,6.51,15.2,16.0,,18.0,21.0,22.58,-0.11,17.1,bank: capital ratio 25.2%,14.9,2026 guidance cut; growth ~1%
+EVD,CTS Eventim (Xetra),Sep 23,6.01,17.2,15.6,5.18,,16.9,38.9,0.0,26.3,net cash EUR 1.24B,14.7,"FY25 growth +9.6%, TTM +13.7%"
+NEM,Nemetschek (Xetra),Sep 25,8.05,28.8,20.7,5.13,21.9,14.1,7.8,0.01,16.2,ND/EBITDA 0.42x,16.9,founder non-executive
+AZA,Avanza (Stockholm),Oct 2,6.1,21.5,19.2,,,14.5,13.09,0.3,8.1,bank: CET1 21.9%,16.3,bank
+9697,Capcom (TSE),Sep 5,11.34,26.7,26.9,2.5,52.7,15.8,10.54,0.04,57.8,net cash,18.9,stale page
+6920,Lasertec (TSE),Sep 26,23.38,47.5,36.5,1.28,50.3,14.7,11.12,-0.45,833.1,net cash,21.4,FY26 revenue -8.4%
+5032,Anycolor (TSE),Sep 4,1.14,12.9,,8.63,220.6,30.0,45.09,-1.03,9.3,net cash,13.2,stale page; talent-agency concentration
+2222,Kotobuki Spirits (TSE),Sep 20,2.55,30.9,25.8,2.85,80.0,16.2,29.47,0.04,10.3,net cash,18.6,FY26 growth +8.9%
+5253,COVER (TSE),Jul 27,0.69,36.7,,6.27,112.8,34.1,43.11,0.09,23.2,net cash,21.4,stale; TTM growth +4.1%
+9279,Gift Holdings (TSE),Oct 3,0.53,27.1,22.4,0.76,20.0,28.2,51.12,0.14,4.3,ND/EBITDA 0.62x,17.5,FCF yield <1%
+6036,KeePer (TSE),Sep 6,0.61,9.8,,2.81,40.9,15.1,50.89,0.0,4.0,net cash,11.2,stale page

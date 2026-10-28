@@ -1,0 +1,25 @@
+variant,book,mean_net,worst_net,worst_scenario,sev5_mean_net,gate_worst_5p25,d_mean_pp,d_worst_pp
+deck R8k,C5_SMH3b,8.6,5.57,Taiwan Hostilities / Kinetic Shock,8.12,pass,0.0,0.0
+deck R8k,K7,8.69,6.44,Taiwan Hostilities / Kinetic Shock,8.57,pass,0.0,0.0
+deck R8k,IVV_100,7.84,1.94,Taiwan Hostilities / Kinetic Shock,5.64,FAIL,0.0,0.0
+gold −1 pp all scenarios,C5_SMH3b,8.4,5.37,Taiwan Hostilities / Kinetic Shock,7.92,pass,-0.2,-0.2
+gold −1 pp all scenarios,K7,8.44,6.19,Taiwan Hostilities / Kinetic Shock,8.32,pass,-0.25,-0.25
+gold −1 pp all scenarios,IVV_100,7.84,1.94,Taiwan Hostilities / Kinetic Shock,5.64,FAIL,0.0,0.0
+gold −2 pp all scenarios,C5_SMH3b,8.2,5.17,Taiwan Hostilities / Kinetic Shock,7.72,FAIL,-0.4,-0.4
+gold −2 pp all scenarios,K7,8.19,5.94,Taiwan Hostilities / Kinetic Shock,8.07,pass,-0.5,-0.5
+gold −2 pp all scenarios,IVV_100,7.84,1.94,Taiwan Hostilities / Kinetic Shock,5.64,FAIL,0.0,0.0
+gold −3 pp all scenarios,C5_SMH3b,8.0,4.97,Taiwan Hostilities / Kinetic Shock,7.52,FAIL,-0.6,-0.6
+gold −3 pp all scenarios,K7,7.94,5.69,Taiwan Hostilities / Kinetic Shock,7.82,pass,-0.75,-0.75
+gold −3 pp all scenarios,IVV_100,7.84,1.94,Taiwan Hostilities / Kinetic Shock,5.64,FAIL,0.0,0.0
+"1980–2000 analog (gold 2.5% in productivity booms, 5% in base/reflation/China)",C5_SMH3b,8.38,5.57,Taiwan Hostilities / Kinetic Shock,8.12,pass,-0.22,0.0
+"1980–2000 analog (gold 2.5% in productivity booms, 5% in base/reflation/China)",K7,8.42,6.23,China Hard Landing,8.57,pass,-0.27,-0.21
+"1980–2000 analog (gold 2.5% in productivity booms, 5% in base/reflation/China)",IVV_100,7.84,1.94,Taiwan Hostilities / Kinetic Shock,5.64,FAIL,0.0,0.0
+trend −3 pp in sev-4/5,C5_SMH3b,8.34,5.12,Taiwan Hostilities / Kinetic Shock,7.67,FAIL,-0.26,-0.45
+trend −3 pp in sev-4/5,K7,8.35,5.84,Taiwan Hostilities / Kinetic Shock,7.97,pass,-0.34,-0.6
+trend −3 pp in sev-4/5,IVV_100,7.84,1.94,Taiwan Hostilities / Kinetic Shock,5.64,FAIL,0.0,0.0
+gold −2 pp + trend −3 pp sev-4/5,C5_SMH3b,7.94,4.72,Taiwan Hostilities / Kinetic Shock,7.27,FAIL,-0.66,-0.85
+gold −2 pp + trend −3 pp sev-4/5,K7,7.85,5.34,Taiwan Hostilities / Kinetic Shock,7.47,pass,-0.84,-1.1
+gold −2 pp + trend −3 pp sev-4/5,IVV_100,7.84,1.94,Taiwan Hostilities / Kinetic Shock,5.64,FAIL,0.0,0.0
+gold −2 pp + trend −3 pp + analog,C5_SMH3b,7.85,4.72,Taiwan Hostilities / Kinetic Shock,7.27,FAIL,-0.75,-0.85
+gold −2 pp + trend −3 pp + analog,K7,7.73,5.34,Taiwan Hostilities / Kinetic Shock,7.47,pass,-0.96,-1.1
+gold −2 pp + trend −3 pp + analog,IVV_100,7.84,1.94,Taiwan Hostilities / Kinetic Shock,5.64,FAIL,0.0,0.0

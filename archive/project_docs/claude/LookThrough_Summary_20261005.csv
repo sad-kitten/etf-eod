@@ -1,0 +1,7 @@
+etf,names,top25_weight_pct,flag_unprofitable_wt,flag_unprofitable_na_wt,flag_neg_fcf_wt,flag_neg_fcf_na_wt,flag_evs_gt10_wt,flag_evs_gt10_na_wt,flag_dilution_gt2_wt,flag_dilution_gt2_na_wt,flag_lottery_wt,flag_lottery_na_wt,hard_any_wt,hard_any_na_wt,any_flag_wt,any_flag_na_wt
+CIBR,25,87.2,12.6,0.0,0.0,0.0,51.7,0.0,29.4,0.0,0.0,1.7,29.4,0.0,55.3,0.0
+NUKZ,25,74.3,8.8,0.0,14.1,0.0,14.6,0.0,13.9,5.1,3.3,26.5,20.0,0.0,29.0,0.0
+SHLD,25,91.4,0.9,8.3,5.7,8.3,11.7,8.3,9.1,9.3,0.0,29.8,12.7,8.3,24.4,8.3
+SMH,25,100.0,4.6,0.0,0.0,0.0,83.9,0.0,13.0,0.0,2.2,0.0,13.0,0.0,84.8,0.0
+URNM,25,100.1,43.1,20.3,46.8,25.8,66.6,20.3,42.6,25.1,5.4,50.1,46.8,20.3,67.8,20.3
+XAR,25,71.3,6.4,0.0,20.2,0.0,6.5,0.0,12.0,3.0,3.5,5.7,20.2,0.0,23.1,0.0
