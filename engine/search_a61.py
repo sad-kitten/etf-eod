@@ -15,6 +15,7 @@ POOL = ["GLDM", "SHLD", "CIBR", "DBMF", "KMLM", "BRKB", "MSCI", "UTHR", "CME", "
 import report_v3 as R
 DK = R.M0   # DECK_SHIFT-aware deck (A61 fix: fast evaluator previously ignored DECK_SHIFT)
 NOGATES = os.environ.get('A61_NOGATES', '0') == '1'
+CEK = os.environ.get('A61_CE', 'ce3')   # A62: objective gamma (ce15 / ce2 / ce3)
 D = U.Draws(int(os.environ.get("NPATHS", "6000")), 31415)
 DS = ST.DECK_STRESSED
 if os.environ.get('A61_ALT_SHIFT'):
@@ -30,7 +31,7 @@ def score(d):
     elif not ST.violations(w):
         f = ST.evaluate_fast(w, deck=DK)
         if NOGATES or not f["fails"]:
-            ub = U.evaluate_u(w, D, 1.0, deck=DK)["ce3"]; us = U.evaluate_u(w, D, 1.0, deck=DS)["ce3"] if A > 0 else ub
+            ub = U.evaluate_u(w, D, 1.0, deck=DK)[CEK]; us = U.evaluate_u(w, D, 1.0, deck=DS)[CEK] if A > 0 else ub
             if A > 0 and NOGATES is False and float((DS.T @ w - float(__import__('core').ERV @ w)).min()) < 0: pass
             T = float(os.environ.get("ENGINEV2_T", "50"))
             gb, gs = (ub ** (1 / T) - 1) * 100, (us ** (1 / T) - 1) * 100

@@ -74,7 +74,7 @@ def run_fast_u(r, sigv, pin, conv, dn, ds, m):
         W = W - draw; ru |= W <= 0; W = np.maximum(W, 1e-9)
     lg = np.log(W)
     return dict(PathCE=float(np.exp(lg.mean())), CE3=float(np.mean(W ** -2.0) ** -0.5), CE5=float(np.mean(W ** -4.0) ** -0.25),
-                CE2=float(np.mean(W ** -1.0) ** -1.0), P5=float(np.quantile(W, .05)), P10=float(np.quantile(W, .10)), ruin=int(ru.sum()), pW1=float((W < 1.0).mean()))
+                CE2=float(np.mean(W ** -1.0) ** -1.0), CE15=float(np.mean(W ** -0.5) ** -2.0), P5=float(np.quantile(W, .05)), P10=float(np.quantile(W, .10)), ruin=int(ru.sum()), pW1=float((W < 1.0).mean()))
 
 CONVS = [("robust", "G"), ("robust", "L"), ("canonical", "G"), ("canonical", "L")]
 def evaluate_u(w, D, k=1.0, sigmix=True, deck=None):
@@ -86,7 +86,7 @@ def evaluate_u(w, D, k=1.0, sigmix=True, deck=None):
         sigv, _ = ST.sigma_vec(w, pin)
         for conv in ("G", "L"): out[(pin, conv)] = run_fast_u(r, sigv, pin, conv, dn, ds, m)
     mlog = lambda key: float(np.mean([np.log(out[c][key]) for c in CONVS]))
-    return dict(geo=np.exp(mlog("PathCE")), ce3=np.exp(mlog("CE3")), ce5=np.exp(mlog("CE5")), P5=out[("robust", "G")]["P5"],
+    return dict(geo=np.exp(mlog("PathCE")), ce3=np.exp(mlog("CE3")), ce5=np.exp(mlog("CE5")), ce2=np.exp(mlog("CE2")), ce15=np.exp(mlog("CE15")), P5=out[("robust", "G")]["P5"],
                 ruin=out[("robust", "G")]["ruin"], pW1=float(np.mean([out[c]["pW1"] for c in CONVS])))
 
 _src = inspect.getsource(E.run)
