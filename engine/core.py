@@ -104,4 +104,4 @@ def gates_ok(ev):
 
 def gates_full_ok(ev):
     return (ev["DRB"] <= FLOOR["DRB"] + 1e-12 and ev["worst"] >= FLOOR["worst"] - 1e-12
-            and ev["RCEW"] >= FLOOR["RCEW"] - 1e-9 and ev["R3AF"] >= FLOOR["R3AF"] - 0.002)
+            and ev["R3AF"] >= FLOOR["R3AF"] - 0.002)   # RCEW floor removed 2026-10-29 (retired as ranking input; A58)

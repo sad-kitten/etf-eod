@@ -41,7 +41,7 @@ ER = {
  'V':0.00,'IGV':0.41,'FTEC':0.084,'COIN':0.00,'EMXC':0.25,'EWT':0.59,'SIL':0.65,'VTV':0.04,'SCHG':0.04,'IBB':0.45,
 }
 
-NP_, T, LAM, DRAW = 60000, int(os.environ.get('ENGINEV2_T', '40')), 0.125, 0.03
+NP_, T, LAM, DRAW = 60000, int(os.environ.get('ENGINEV2_T', '40')), float(os.environ.get('ENGINEV2_LAM', '0.125')), 0.03   # LAM: annual regime-redraw probability (A60 override)
 
 import json as _json
 _er8 = os.path.join(DECKS, "ER_R8.json")
@@ -134,7 +134,9 @@ class FastEval:
                     ruin=int(ru.sum()))
 
 # ---------------- closed-form scenario metrics ----------------
-def tw_after_draw(g, T_=40, d=0.03):
+def tw_after_draw(g, T_=None, d=0.03):
+    """Terminal multiple after a fixed draw on initial corpus; horizon defaults to the engine T (A58/A60: was hard-coded 40)."""
+    T_ = T if T_ is None else T_
     g = np.asarray(g, dtype=float)
     growth = (1.0 + g) ** T_
     out = np.where(np.abs(g) < 1e-15, 1.0 - d * T_, growth - d * (growth - 1.0) / np.where(np.abs(g) < 1e-15, 1.0, g))
@@ -145,12 +147,13 @@ def log_cew(tm, w, eps=1e-12):
     return float(np.exp(np.sum(w * np.log(np.maximum(tm, eps)))))
 
 def rcew40(r_net):
+    """Robust CEW on the engine horizon (RCEW50 at T=50). Diagnostic only since 2026-10-29 (retired as a ranking input)."""
     tm = tw_after_draw(r_net)
     c = log_cew(tm, W_CAN); e = log_cew(tm, np.ones(NSC) / NSC); s = log_cew(tm, ST_W)
     robust = float(np.exp(0.50 * np.log(max(c, 1e-12)) + 0.25 * np.log(max(e, 1e-12)) + 0.25 * np.log(max(s, 1e-12))))
     return dict(canonical=c, equal=e, stress=s, robust=robust)
 
-def drb40(r_net, h=0.05, eps=1e-9):
+def drb40(r_net, h=0.06, eps=1e-9):   # ratified hurdle 6% (2026-08-31); horizon = engine T
     tm = np.maximum(tw_after_draw(r_net), eps)
     twh = tw_after_draw(np.array([h]))[0]
     gap = np.maximum(0.0, np.log(twh / tm))
@@ -262,3 +265,5 @@ def evaluate_closed_form(weights, bench=EVG11):
 def wer_evg11():
     er_evg = dict(ER); er_evg.setdefault("IAI", 0.33)
     return sum(EVG11[t] * er_evg.get(t, 0.4) for t in EVG11) / 100.0
+
+rcew, drb = rcew40, drb40   # horizon-neutral names
