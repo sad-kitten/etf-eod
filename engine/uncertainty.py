@@ -4,7 +4,9 @@ import inspect, os, numpy as np, pandas as pd
 import lib_pathce as L, standing as ST, search_B as S, policy_engine2 as E
 from core import UNIV, IDX, N, DECKM, ERV, SINGLES, sigma_of
 
-SPEC1 = dict(eq=1.25, them=1.5, block=1.5, gold=1.5, trend=2.0, trend_stress=1.5, A=0.75, B=1.25, C=2.0, single=2.5)
+SPEC1 = dict(eq=1.25, them=float(os.environ.get("UNC_THEM", "1.5")), block=float(os.environ.get("UNC_BLOCK", "1.5")),
+             gold=float(os.environ.get("UNC_GOLD", "1.5")), trend=float(os.environ.get("UNC_TREND", "2.0")), trend_stress=1.5,
+             A=0.75, B=1.25, C=2.0, single=2.5)   # A61: env overrides (defaults = ratified E1 spec)
 NON_EQUITY = set("IEF TLT GOVZ LTPZ SCHP VTIP BIL SHY AGG TIP STIP HYG LQD EMB TAIL BTAL GLDM GLD PSLV DBMF KMLM CTA "
                  "CTA_OVERLAY PDBC IBIT".split())
 GOLD_U = set(ST.GOLD_FAM) | set(ST.BLOCKS["gold"])
