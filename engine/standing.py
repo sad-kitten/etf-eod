@@ -112,6 +112,13 @@ STRESS_FLOOR = float(os.environ.get("STRESS_FLOOR", "0.035"))
 STRESS_GATE = os.environ.get("STRESS_GATE", "0") == "1"
 def stressed_deck(M=None):
     M = (DECKM if M is None else M).copy(); sev45 = L.SEV >= 4
+    if os.environ.get("STRESS_SHIFT_FILE"):   # A65 gates v4: G2 stress deck = explicit shift file (all / sev45 pp)
+        import json as _j
+        for t, v in _j.load(open(os.environ["STRESS_SHIFT_FILE"])).items():
+            if t not in IDX: continue
+            if "all" in v: M[IDX[t]] += v["all"] / 100.0
+            if "sev45" in v: M[IDX[t], sev45] += v["sev45"] / 100.0
+        return M
     for t in GOLD_FAM:
         if t in IDX: M[IDX[t]] += STRESS_SPEC["gold_all"] / 100.0
     for t in TREND:
@@ -129,7 +136,7 @@ def stressed_worst(w):
 def stressed_fail(w):
     v, sc = stressed_worst(w); return None if v >= STRESS_FLOOR - 1e-12 else f"stressed worst {v*100:.2f}<{STRESS_FLOOR*100:.2f} ({sc[:20]})"
 
-GATES = dict(ruin=0, P5=1.00, worst=0.0525, R3AF=0.05, LS_ruin=0)
+GATES = dict(ruin=0, P5=1.00, worst=float(os.environ.get("WORST_GATE", "0.0525")), R3AF=float(os.environ.get("R3AF_GATE", "0.05")), LS_ruin=0)   # A65: env (gates v4: worst 4.27)
 P5_BAND, P5_SEEDS = 0.02, [42, 7, 101, 2024, 555, 31337]
 R3AF_BENCH = "IVV"; R3AF_BAD, R3AF_GOOD = L.SEV >= 5, L.SEV <= 2
 def r3af_std(r_net):

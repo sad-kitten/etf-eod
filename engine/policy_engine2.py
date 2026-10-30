@@ -49,8 +49,8 @@ def run(rng, r_net, pi, conv, sigma, pol=POL):
     yrs_red = np.zeros(NP_); tax_paid = np.zeros(NP_); tax_yr = np.zeros(T); ira_yr = np.zeros(T)
     Wts = []
     for t in range(1, T + 1):
-        j = rng.random(NP_) < LAM
-        if j.any(): s[j] = rng.choice(len(pi), size=int(j.sum()), p=pi)
+        j = rng.random(NP_) < L.LAMV[s]
+        if j.any(): s[j] = rng.choice(len(pi), size=int(j.sum()), p=L.entry(pi))
         sg = sigma[s] if vec else sigma
         mu = np.log1p(r_net[s]) - (sg * sg / 2 if conv == "G" else 0.0)
         g = np.exp(mu + sg * rng.standard_normal(NP_)) / (1.0 + INFL)

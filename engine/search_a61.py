@@ -11,7 +11,7 @@ K = int(sys.argv[1]); A = float(sys.argv[2]); OUT = sys.argv[3]
 MINW = float(os.environ.get("A61_MINW", "0.02")); GOLDCAP = float(os.environ.get("A61_GOLDCAP", "1.0"))
 GOLDS = ["GLDM", "FNV", "WPM", "GDX", "SIL", "PSLV"]
 if os.environ.get("A61_RSNAME"): ST.RS_NAME = float(os.environ["A61_RSNAME"])
-POOL = ["GLDM", "SHLD", "CIBR", "DBMF", "KMLM", "BRKB", "MSCI", "UTHR", "CME", "URNM", "XAR", "SMH", "XLE", "NUKZ", "CTA", "GRID", "SPMO", "FNV"]
+POOL = ["GLDM", "SHLD", "CIBR", "DBMF", "KMLM", "BRKB", "MSCI", "UTHR", "CME", "URNM", "XAR", "SMH", "XLE", "NUKZ", "CTA", "GRID", "SPMO", "FNV", "SOXX", "XSD"]
 import report_v3 as R
 DK = R.M0   # DECK_SHIFT-aware deck (A61 fix: fast evaluator previously ignored DECK_SHIFT)
 NOGATES = os.environ.get('A61_NOGATES', '0') == '1'
@@ -70,14 +70,18 @@ def climb(seed):
                 cur = {t: round(x, 2) for t, x in best[1].items() if x > 1e-9}; s = score(cur); improved = True
     return cur, s
 
-SEEDS_MAIN = [dict(GLDM=.10, DBMF=.20, SHLD=.15, CIBR=.10, SMH=.05, URNM=.05, CME=.05, MSCI=.05, UTHR=.05, BRKB=.10, KMLM=.08, XAR=.02),
+SEEDS_MAIN = [dict(DBMF=.20, SHLD=.20, SMH=.12, BRKB=.11, NUKZ=.10, URNM=.06, CME=.05, MSCI=.05, CIBR=.03, UTHR=.02, KMLM=.02, XAR=.02, XLE=.02),
+          dict(SHLD=.17, KMLM=.16, DBMF=.14, SMH=.12, NUKZ=.12, BRKB=.11, CME=.05, CIBR=.03, MSCI=.03, UTHR=.03, URNM=.02, GLDM=.02),
+          dict(GLDM=.10, DBMF=.20, SHLD=.15, CIBR=.10, SMH=.05, URNM=.05, CME=.05, MSCI=.05, UTHR=.05, BRKB=.10, KMLM=.08, XAR=.02),
           dict(GLDM=.20, DBMF=.20, SHLD=.15, CIBR=.10, SMH=.05, URNM=.05, CME=.05, MSCI=.05, UTHR=.05, BRKB=.05, KMLM=.03, XAR=.02),
           dict(SHLD=.16, GLDM=.15, CIBR=.15, DBMF=.15, NUKZ=.08, BRKB=.05, CME=.05, MSCI=.05, URNM=.05, UTHR=.05, XLE=.02, XAR=.02, SMH=.02)]
-SEEDS7 = [dict(GLDM=.20, SHLD=.20, CIBR=.20, DBMF=.20, URNM=.10, MSCI=.05, UTHR=.05),
+SEEDS7 = [dict(DBMF=.20, SHLD=.20, CIBR=.19, BRKB=.15, URNM=.11, KMLM=.10, MSCI=.05),
+          dict(GLDM=.20, SHLD=.20, CIBR=.20, DBMF=.20, URNM=.10, MSCI=.05, UTHR=.05),
           dict(DBMF=.20, GLDM=.19, SHLD=.19, CIBR=.17, BRKB=.15, MSCI=.05, UTHR=.05),
           dict(SHLD=.20, CIBR=.20, DBMF=.20, GLDM=.15, URNM=.10, MSCI=.05, UTHR=.05, KMLM=.05),
           dict(DBMF=.20, KMLM=.15, SHLD=.20, CIBR=.15, BRKB=.15, GLDM=.10, UTHR=.05)]
-SEEDS5 = [dict(GLDM=.30, SHLD=.23, CIBR=.20, DBMF=.17, URNM=.10),
+SEEDS5 = [dict(SHLD=.30, DBMF=.29, BRKB=.15, URNM=.14, SMH=.12),
+          dict(GLDM=.30, SHLD=.23, CIBR=.20, DBMF=.17, URNM=.10),
           dict(DBMF=.30, SHLD=.23, CIBR=.20, GLDM=.17, URNM=.10),
           dict(DBMF=.25, SHLD=.25, CIBR=.20, GLDM=.15, BRKB=.15)]
 out = {}

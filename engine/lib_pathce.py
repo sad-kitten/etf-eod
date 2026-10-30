@@ -17,6 +17,13 @@ W_CAN = SCEN["Weight_Normalized"].values
 SEV = SCEN["Severity_1to5"].values.astype(float)
 NSC = len(SC)
 assert NSC == len(W_CAN), (NSC, len(W_CAN))
+_lamf = os.environ.get("ENGINEV2_LAM_FILE")
+_lam0 = float(os.environ.get('ENGINEV2_LAM', '0.125'))
+LAMV = np.full(NSC, _lam0)
+if _lamf:
+    for k, v in __import__("json").load(open(_lamf)).items():
+        i = int(k) - 1 if str(k).isdigit() else SC.index(k)
+        LAMV[i] = float(v)
 
 # AR4 benchmark-only IAI proxy
 DECK.loc["IAI"] = DECK.loc[["CME", "CBOE", "NDAQ"]].mean()
@@ -44,6 +51,13 @@ ER = {
 NP_, T, LAM, DRAW = 60000, int(os.environ.get('ENGINEV2_T', '40')), float(os.environ.get('ENGINEV2_LAM', '0.125')), 0.03   # LAM: annual regime-redraw probability (A60 override)
 
 import json as _json
+
+# A65: scenario-specific regime persistence. ENGINEV2_LAM_FILE = JSON {scenario_id(1-based) or name: lambda}; others = LAM.
+# Exit probability per scenario LAMV[s]; on exit the next scenario is drawn from q ∝ pi·LAMV, which keeps pi as the
+# long-run occupancy (time share). Uniform LAMV reproduces the original engine exactly (q is pi itself).
+def entry(pi):
+    if LAMV is None or np.all(LAMV == LAMV[0]): return pi
+    q = np.asarray(pi) * LAMV; return q / q.sum()
 _er8 = os.path.join(DECKS, "ER_R8.json")
 if os.path.exists(_er8):
     ER.update({k: v for k, v in _json.load(open(_er8)).items() if k not in ER})
@@ -83,9 +97,9 @@ def run_engine(rng, r_g, pi, conv, sigma, wer_):
     s = rng.choice(len(pi), size=NP_, p=pi)
     W = np.ones(NP_); ru = np.zeros(NP_, bool)
     for _ in range(T):
-        j = rng.random(NP_) < LAM
+        j = rng.random(NP_) < LAMV[s]
         if j.any():
-            s[j] = rng.choice(len(pi), size=int(j.sum()), p=pi)
+            s[j] = rng.choice(len(pi), size=int(j.sum()), p=entry(pi))
         mu = np.log1p(rn[s]) - (sigma * sigma / 2 if conv == "G" else 0.0)
         W = W * np.exp(mu + sigma * rng.standard_normal(NP_)) - DRAW
         ru |= (W <= 0)
@@ -108,11 +122,11 @@ class FastEval:
             s = np.empty((npaths, T), dtype=np.int8)
             cur = rng.choice(len(pi), size=npaths, p=pi)
             for t in range(T):
-                j = rng.random(npaths) < LAM
+                j = rng.random(npaths) < LAMV[cur]
                 nj = int(j.sum())
                 if nj:
                     cur = cur.copy()
-                    cur[j] = rng.choice(len(pi), size=nj, p=pi)
+                    cur[j] = rng.choice(len(pi), size=nj, p=entry(pi))
                 s[:, t] = cur
             self.S[name] = s
 
