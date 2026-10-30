@@ -11,7 +11,7 @@ K = int(sys.argv[1]); A = float(sys.argv[2]); OUT = sys.argv[3]
 MINW = float(os.environ.get("A61_MINW", "0.02")); GOLDCAP = float(os.environ.get("A61_GOLDCAP", "1.0"))
 GOLDS = ["GLDM", "FNV", "WPM", "GDX", "SIL", "PSLV"]
 if os.environ.get("A61_RSNAME"): ST.RS_NAME = float(os.environ["A61_RSNAME"])
-POOL = ["GLDM", "SHLD", "CIBR", "DBMF", "KMLM", "BRKB", "MSCI", "UTHR", "CME", "URNM", "XAR", "SMH", "XLE", "NUKZ", "CTA", "GRID", "SPMO", "FNV", "SOXX", "XSD"]
+POOL = [t for t in os.environ.get("A61_EXTRA_POOL","").split(",") if t] + ["GLDM", "SHLD", "CIBR", "DBMF", "KMLM", "BRKB", "MSCI", "UTHR", "CME", "URNM", "XAR", "SMH", "XLE", "NUKZ", "CTA", "GRID", "SPMO", "FNV", "SOXX", "XSD"]
 import report_v3 as R
 DK = R.M0   # DECK_SHIFT-aware deck (A61 fix: fast evaluator previously ignored DECK_SHIFT)
 NOGATES = os.environ.get('A61_NOGATES', '0') == '1'
