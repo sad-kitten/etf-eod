@@ -264,3 +264,4 @@ EPU  # VS 2026-10-27 Peru
 EWN  # VS 2026-10-27 Netherlands
 VNM  # VS 2026-10-27 Vietnam
 IHE  # VS 2026-10-27 US pharmaceuticals
+INTC  # 2026-10-30 owner question (GOOGL/INTC/AMZN)
