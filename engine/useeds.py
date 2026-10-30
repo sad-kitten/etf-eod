@@ -11,7 +11,7 @@ for sd in seeds:
     DX = U.Draws(L.NP_, sd)
     for tag, k in (("U1", 1.0), ("U2", 2.0)):
         dn, ds, m = DX.book(w, k, True); mc = U.suite_u(r, sig, dn, ds, m); W = R.pooled(mc)
-        rows.append(dict(Port=nm, seed=sd, tag=tag, g3=R.ce_cagr(W, 3)[1], geo=R.ce_cagr(W, 1)[0],
+        rows.append(dict(Port=nm, seed=sd, tag=tag, g2=R.ce_cagr(W, 2)[1], g3=R.ce_cagr(W, 3)[1], geo=R.ce_cagr(W, 1)[0],
                          P5=mc[("robust", "G")]["P5"], P1=float(np.quantile(W, .01)), depleted_pct=float((W <= 1e-8).mean() * 100)))
         print(rows[-1], flush=True)
 pd.DataFrame(rows).to_csv(sys.argv[4], index=False)
